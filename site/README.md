@@ -18,7 +18,7 @@ Abra http://localhost:3000.
 
 O repositório já contém:
 
-- `.cpanel.yml` (na raiz): instruções de deploy — copia `dist/` para o document root do domínio.
+- `.cpanel.yml` (na raiz): instruções de deploy — copia `dist/` para `/home3/imagin80/desenvolvendo.ia.br/` (document root do domínio, mesma pasta do clone Git). O `.htaccess` em `dist/` bloqueia acesso web ao código-fonte (`/site`, `.git`, `.md`, `.docx` etc).
 - `dist/` (na raiz): o site estático buildado, versionado de propósito porque a HostGator não roda `npm build`.
 
 Fluxo de atualização:
