@@ -14,6 +14,25 @@ npm run dev
 
 Abra http://localhost:3000.
 
+## Publicar na HostGator (ou qualquer hospedagem cPanel)
+
+A HostGator não roda Node.js/Next.js diretamente — é preciso enviar a versão estática:
+
+```bash
+cd site
+npm install
+npm run build
+```
+
+O build gera a pasta `site/out` com o site pronto (HTML/CSS/JS puros). Depois:
+
+1. Acesse o cPanel da HostGator → Gerenciador de Arquivos.
+2. Entre em `public_html` (ou na pasta do seu domínio/subdomínio).
+3. Envie o CONTEÚDO da pasta `out` (index.html, 404.html, pasta `_next`, .htaccess) — não a pasta `out` em si.
+4. O `index.html` deve ficar direto dentro de `public_html`.
+
+Importante: envie os arquivos gerados em `out`, nunca os arquivos-fonte (app/, components/ etc.) — código-fonte Next.js não funciona em hospedagem estática.
+
 ## Publicar na Vercel (recomendado)
 
 1. Suba a pasta `site` para um repositório no GitHub.

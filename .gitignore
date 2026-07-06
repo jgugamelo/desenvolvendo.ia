@@ -4,6 +4,8 @@ node_modules/
 # next.js build
 site/.next/
 site/out/
+deploy-hostgator/
+deploy-hostgator.zip
 
 # logs
 *.log
