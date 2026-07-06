@@ -9,7 +9,7 @@ export const translations = {
       cta: 'Solicitar diagnóstico',
     },
     hero: {
-      badge: 'Agência de IA · Brasil & EUA',
+      badge: 'Agência de IA · Projetos sob medida',
       title1: 'IA para vender mais, atender melhor e gerenciar com ',
       titleHighlight: 'previsibilidade',
       subtitle:
@@ -60,7 +60,7 @@ export const translations = {
     solution: {
       label: 'A solução',
       title: 'Um sistema completo, não um chatbot genérico',
-      text: 'A desenvolvendo.ia conecta IA, CRM, automações e dados para transformar conversas e processos em uma operação inteligente.',
+      text: 'A desenvolvendo.ia desenha e conecta IA, CRM, automações e dados para transformar conversas e processos em uma operação inteligente. Cada projeto é construído sob medida para a realidade da sua empresa — nada de pacotes prontos.',
       blocks: [
         { icon: 'bot', title: 'Agentes de IA', text: 'Para atendimento e vendas, 24/7.' },
         { icon: 'message-circle', title: 'Análise de sentimento', text: 'Em tempo real, conversa por conversa.' },
@@ -72,6 +72,13 @@ export const translations = {
     products: {
       label: 'Produtos e serviços',
       title: 'Soluções para cada etapa da sua operação',
+      subtitle:
+        'Estas são as nossas frentes de atuação — cada entrega é personalizada para o seu processo, seus canais e suas metas.',
+      custom: {
+        title: 'Precisa de algo que não está aqui?',
+        text: 'Desenvolvemos projetos personalizados de ponta a ponta: do diagnóstico ao desenho da solução, integração com os sistemas que você já usa e evolução contínua. Se envolve IA, dados ou automação, nós construímos.',
+        cta: 'Falar sobre um projeto sob medida',
+      },
       items: [
         {
           icon: 'messages-square',
@@ -290,7 +297,7 @@ export const translations = {
       cta: 'Request AI diagnosis',
     },
     hero: {
-      badge: 'AI Agency · Brazil & USA',
+      badge: 'AI Agency · Custom-built solutions',
       title1: 'AI systems for smarter sales, better support and ',
       titleHighlight: 'data-driven operations',
       subtitle:
@@ -341,7 +348,7 @@ export const translations = {
     solution: {
       label: 'The solution',
       title: 'A complete system — not a generic chatbot',
-      text: 'desenvolvendo.ia connects AI, CRM, automations and data to turn conversations and processes into an intelligent operation.',
+      text: 'desenvolvendo.ia designs and connects AI, CRM, automations and data to turn conversations and processes into an intelligent operation. Every project is custom-built around your business — no off-the-shelf packages.',
       blocks: [
         { icon: 'bot', title: 'AI agents', text: 'For support and sales, 24/7.' },
         { icon: 'message-circle', title: 'Sentiment analysis', text: 'Real time, conversation by conversation.' },
@@ -353,6 +360,13 @@ export const translations = {
     products: {
       label: 'Products & services',
       title: 'Solutions for every stage of your operation',
+      subtitle:
+        'These are our core practice areas — every delivery is tailored to your process, your channels and your goals.',
+      custom: {
+        title: 'Need something that isn’t listed here?',
+        text: 'We build end-to-end custom projects: from diagnosis to solution design, integration with the systems you already use and continuous evolution. If it involves AI, data or automation, we build it.',
+        cta: 'Discuss a custom project',
+      },
       items: [
         {
           icon: 'messages-square',

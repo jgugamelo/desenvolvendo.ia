@@ -73,6 +73,7 @@ export function Products({ t }) {
           <h2 className="max-w-3xl font-display text-3xl font-bold text-white sm:text-4xl">
             {t.products.title}
           </h2>
+          <p className="mt-4 max-w-2xl text-lg text-slate-400">{t.products.subtitle}</p>
         </Reveal>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {t.products.items.map((p, i) => (
@@ -87,6 +88,30 @@ export function Products({ t }) {
             </Reveal>
           ))}
         </div>
+
+        {/* custom projects banner */}
+        <Reveal className="mt-10">
+          <div className="glass card-hover flex flex-col items-start gap-6 rounded-2xl border-ai/25 p-8 md:flex-row md:items-center">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-accent/25 to-ai/25 text-ai">
+              <Icon name="puzzle" className="h-7 w-7" />
+            </div>
+            <div className="flex-1">
+              <h3 className="font-display text-xl font-semibold text-white">
+                {t.products.custom.title}
+              </h3>
+              <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-400">
+                {t.products.custom.text}
+              </p>
+            </div>
+            <a
+              href="#diagnostico"
+              className="btn-ghost shrink-0"
+              onClick={() => trackEvent('click_cta_diagnostico', { placement: 'custom_project' })}
+            >
+              {t.products.custom.cta}
+            </a>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
