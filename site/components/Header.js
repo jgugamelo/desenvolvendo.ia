@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Icon from './Icon';
+import Logo from './Logo';
 import { trackEvent } from '@/lib/i18n';
 
 export default function Header({ t, lang, setLang }) {
@@ -34,8 +35,8 @@ export default function Header({ t, lang, setLang }) {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <a href="#home" className="font-display text-xl font-bold tracking-tight text-white">
-          desenvolvendo<span className="text-gradient">.ia</span>
+        <a href="#home" aria-label="desenvolvendo.ia">
+          <Logo className="text-xl" />
         </a>
 
         <nav className="hidden items-center gap-7 lg:flex">

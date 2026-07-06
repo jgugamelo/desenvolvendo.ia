@@ -191,6 +191,40 @@ html {
   to { left: 93%; }
 }
 
+/* ---------- animated logo (comet + sparkles) ---------- */
+.comet-trail {
+  stroke-dasharray: 95;
+  filter: drop-shadow(0 0 3px rgba(34, 211, 170, 0.7));
+  animation: cometTrail 4.5s ease-in-out infinite;
+}
+@keyframes cometTrail {
+  0% { stroke-dashoffset: 95; opacity: 0; }
+  10% { opacity: 1; }
+  45% { stroke-dashoffset: 0; opacity: 1; }
+  70% { stroke-dashoffset: 0; opacity: 0.55; }
+  100% { stroke-dashoffset: 0; opacity: 0.55; }
+}
+.comet-head {
+  filter: drop-shadow(0 0 6px #22d3aa);
+}
+.comet-glow {
+  opacity: 0.35;
+  filter: blur(3px);
+  animation: cometGlow 4.5s ease-in-out infinite;
+}
+@keyframes cometGlow {
+  0%, 30% { opacity: 0.15; }
+  48% { opacity: 0.75; }
+  70%, 100% { opacity: 0.35; }
+}
+.twinkle {
+  animation: twinkle 2.6s ease-in-out infinite;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.12; }
+  50% { opacity: 1; }
+}
+
 /* ---------- gradient border wrapper ---------- */
 .gborder {
   background: linear-gradient(135deg, rgba(46, 124, 246, 0.65), rgba(34, 211, 170, 0.65));

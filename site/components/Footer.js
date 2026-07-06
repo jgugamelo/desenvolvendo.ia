@@ -1,6 +1,7 @@
 'use client';
 
 import Icon from './Icon';
+import Logo from './Logo';
 import { whatsappLink, trackEvent } from '@/lib/i18n';
 
 export default function Footer({ t, lang, setLang }) {
@@ -18,9 +19,7 @@ export default function Footer({ t, lang, setLang }) {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <p className="font-display text-xl font-bold text-white">
-              desenvolvendo<span className="text-gradient">.ia</span>
-            </p>
+            <Logo className="text-xl" />
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-slate-400">{t.footer.about}</p>
             <div className="mt-5 flex gap-3">
               {['instagram', 'linkedin', 'youtube'].map((s) => (
