@@ -1,0 +1,78 @@
+'use client';
+
+import {
+  Bot,
+  MessageCircle,
+  MessagesSquare,
+  BarChart3,
+  LayoutDashboard,
+  Zap,
+  Workflow,
+  GraduationCap,
+  Timer,
+  Eye,
+  Repeat,
+  Puzzle,
+  TrendingDown,
+  Target,
+  HeartPulse,
+  Rocket,
+  Stethoscope,
+  Home,
+  Scale,
+  Wrench,
+  Building2,
+  Briefcase,
+  Check,
+  User,
+  Smile,
+  Menu,
+  X,
+  Instagram,
+  Linkedin,
+  Youtube,
+  AlertTriangle,
+  CheckCircle2,
+} from 'lucide-react';
+
+const ICONS = {
+  bot: Bot,
+  'message-circle': MessageCircle,
+  'messages-square': MessagesSquare,
+  'bar-chart-3': BarChart3,
+  'layout-dashboard': LayoutDashboard,
+  zap: Zap,
+  workflow: Workflow,
+  'graduation-cap': GraduationCap,
+  timer: Timer,
+  eye: Eye,
+  repeat: Repeat,
+  puzzle: Puzzle,
+  'trending-down': TrendingDown,
+  target: Target,
+  'heart-pulse': HeartPulse,
+  rocket: Rocket,
+  stethoscope: Stethoscope,
+  home: Home,
+  scale: Scale,
+  wrench: Wrench,
+  'building-2': Building2,
+  briefcase: Briefcase,
+  check: Check,
+  user: User,
+  smile: Smile,
+  menu: Menu,
+  x: X,
+  instagram: Instagram,
+  linkedin: Linkedin,
+  youtube: Youtube,
+  'alert-triangle': AlertTriangle,
+  'check-circle': CheckCircle2,
+};
+
+/** Renders a lucide icon by name with consistent stroke weight. */
+export default function Icon({ name, className = 'h-6 w-6', strokeWidth = 1.75 }) {
+  const Cmp = ICONS[name];
+  if (!Cmp) return null;
+  return <Cmp className={className} strokeWidth={strokeWidth} aria-hidden="true" />;
+}

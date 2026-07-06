@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Icon from './Icon';
 import { trackEvent } from '@/lib/i18n';
 
 export default function Header({ t, lang, setLang }) {
@@ -77,7 +78,7 @@ export default function Header({ t, lang, setLang }) {
             className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-600/40 text-slate-300 lg:hidden"
             aria-label="Menu"
           >
-            {open ? '✕' : '☰'}
+            <Icon name={open ? 'x' : 'menu'} className="h-5 w-5" />
           </button>
         </div>
       </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Icon from './Icon';
 import { trackEvent } from '@/lib/i18n';
 
 function useCountUp(active) {
@@ -132,14 +133,14 @@ export default function Hero({ t }) {
           </div>
 
           {/* floating chips */}
-          <div className="glass absolute -left-6 -top-6 hidden animate-float rounded-xl px-4 py-3 text-xs font-semibold text-ai md:block">
-            😊 Sentimento: positivo
+          <div className="glass absolute -left-6 -top-6 hidden animate-float items-center gap-2 rounded-xl px-4 py-3 text-xs font-semibold text-ai md:flex">
+            <Icon name="smile" className="h-4 w-4" /> Sentimento: positivo
           </div>
           <div
-            className="glass absolute -bottom-6 -right-4 hidden animate-float rounded-xl px-4 py-3 text-xs font-semibold text-accent-soft md:block"
+            className="glass absolute -bottom-6 -right-4 hidden animate-float items-center gap-2 rounded-xl px-4 py-3 text-xs font-semibold text-accent-soft md:flex"
             style={{ animationDelay: '1.6s' }}
           >
-            ⚡ Follow-up automático enviado
+            <Icon name="zap" className="h-4 w-4" /> Follow-up automático enviado
           </div>
         </div>
       </div>

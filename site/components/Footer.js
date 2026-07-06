@@ -1,5 +1,6 @@
 'use client';
 
+import Icon from './Icon';
 import { whatsappLink, trackEvent } from '@/lib/i18n';
 
 export default function Footer({ t, lang, setLang }) {
@@ -27,9 +28,9 @@ export default function Footer({ t, lang, setLang }) {
                   key={s}
                   href="#"
                   aria-label={s}
-                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-600/40 text-xs uppercase text-slate-400 transition-colors hover:border-ai hover:text-ai"
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-600/40 text-slate-400 transition-colors hover:border-ai hover:text-ai"
                 >
-                  {s[0]}
+                  <Icon name={s} className="h-4 w-4" />
                 </a>
               ))}
             </div>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Reveal from './Reveal';
+import Icon from './Icon';
 import { trackEvent, whatsappLink } from '@/lib/i18n';
 
 const inputCls =
@@ -64,8 +65,8 @@ export default function LeadForm({ t, lang }) {
           <Reveal delay={2}>
             {sent ? (
               <div className="glass flex h-full min-h-[400px] flex-col items-center justify-center rounded-2xl border-ai/30 p-10 text-center">
-                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-ai/15 text-3xl text-ai">
-                  ✓
+                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-ai/15 text-ai">
+                  <Icon name="check-circle" className="h-8 w-8" strokeWidth={2} />
                 </span>
                 <h3 className="mt-5 font-display text-2xl font-bold text-white">
                   {t.form.successTitle}

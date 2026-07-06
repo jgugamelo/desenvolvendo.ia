@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Reveal from './Reveal';
+import Icon from './Icon';
 import { trackEvent } from '@/lib/i18n';
 
 const SENTIMENT_STYLE = {
@@ -86,7 +87,7 @@ export default function SentimentDemo({ t }) {
             <ul className="mt-7 grid gap-3 sm:grid-cols-2">
               {t.sentiment.features.map((f) => (
                 <li key={f} className="flex items-start gap-2.5 text-sm text-slate-300">
-                  <span className="mt-0.5 shrink-0 text-ai">✓</span> {f}
+                  <Icon name="check" className="mt-0.5 h-4 w-4 shrink-0 text-ai" strokeWidth={2.5} /> {f}
                 </li>
               ))}
             </ul>
@@ -98,8 +99,8 @@ export default function SentimentDemo({ t }) {
               {/* chat */}
               <div className="glass flex min-h-[420px] flex-col rounded-2xl p-4">
                 <div className="mb-3 flex items-center gap-2 border-b border-white/5 pb-3">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ai/15 text-sm">
-                    👤
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ai/15 text-ai">
+                    <Icon name="user" className="h-4 w-4" />
                   </span>
                   <div>
                     <p className="text-sm font-semibold text-white">{t.sentiment.chatTitle}</p>
@@ -169,12 +170,16 @@ export default function SentimentDemo({ t }) {
 
                 {showRisk && !showRecovered && (
                   <div className="chat-bubble rounded-xl border border-red-400/25 bg-red-400/10 p-3 text-xs font-medium text-red-300">
-                    {t.sentiment.alertRisk}
+                    <span className="flex items-center gap-1.5">
+                      <Icon name="alert-triangle" className="h-3.5 w-3.5 shrink-0" strokeWidth={2} />
+                      {t.sentiment.alertRisk}
+                    </span>
                     <p className="mt-1.5 font-normal text-slate-300">{t.sentiment.alertSuggestion}</p>
                   </div>
                 )}
                 {showRecovered && (
-                  <div className="chat-bubble rounded-xl border border-ai/25 bg-ai/10 p-3 text-xs font-medium text-ai">
+                  <div className="chat-bubble flex items-center gap-1.5 rounded-xl border border-ai/25 bg-ai/10 p-3 text-xs font-medium text-ai">
+                    <Icon name="check-circle" className="h-3.5 w-3.5 shrink-0" strokeWidth={2} />
                     {t.sentiment.alertRecovered}
                   </div>
                 )}

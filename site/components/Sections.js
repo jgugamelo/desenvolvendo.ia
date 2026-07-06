@@ -1,6 +1,7 @@
 'use client';
 
 import Reveal from './Reveal';
+import Icon from './Icon';
 import { trackEvent, whatsappLink } from '@/lib/i18n';
 
 /* ---------------- Problem ---------------- */
@@ -18,8 +19,10 @@ export function Problem({ t }) {
           {t.problem.items.map((item, i) => (
             <Reveal key={item.title} delay={(i % 3) + 1}>
               <div className="glass card-hover h-full rounded-2xl p-6">
-                <span className="text-2xl">{item.icon}</span>
-                <h3 className="mt-3 font-display text-lg font-semibold text-white">{item.title}</h3>
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-ink-900/80 text-ai">
+                  <Icon name={item.icon} className="h-5 w-5" />
+                </div>
+                <h3 className="mt-4 font-display text-lg font-semibold text-white">{item.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-400">{item.text}</p>
               </div>
             </Reveal>
@@ -46,7 +49,9 @@ export function Solution({ t }) {
           {t.solution.blocks.map((b, i) => (
             <Reveal key={b.title} delay={(i % 4) + 1}>
               <div className="glass card-hover h-full rounded-2xl p-5 text-center">
-                <span className="text-3xl">{b.icon}</span>
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-ai/20 text-ai">
+                  <Icon name={b.icon} className="h-5 w-5" />
+                </div>
                 <h3 className="mt-3 font-display text-base font-semibold text-white">{b.title}</h3>
                 <p className="mt-1.5 text-xs leading-relaxed text-slate-400">{b.text}</p>
               </div>
@@ -73,8 +78,8 @@ export function Products({ t }) {
           {t.products.items.map((p, i) => (
             <Reveal key={p.name} delay={(i % 3) + 1}>
               <div className="glass card-hover group h-full rounded-2xl p-7">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-ai/20 text-2xl transition-transform duration-300 group-hover:scale-110">
-                  {p.icon}
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-ai/20 text-ai transition-transform duration-300 group-hover:scale-110">
+                  <Icon name={p.icon} className="h-6 w-6" />
                 </div>
                 <h3 className="mt-4 font-display text-xl font-semibold text-white">{p.name}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-400">{p.text}</p>
@@ -103,7 +108,9 @@ export function Who({ t }) {
             {t.who.segments.map((s, i) => (
               <Reveal key={s.name} delay={(i % 2) + 1}>
                 <div className="glass card-hover flex h-full items-start gap-4 rounded-2xl p-5">
-                  <span className="text-2xl">{s.icon}</span>
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-ink-900/80 text-ai">
+                    <Icon name={s.icon} className="h-5 w-5" />
+                  </div>
                   <div>
                     <h3 className="font-display font-semibold text-white">{s.name}</h3>
                     <p className="mt-1 text-sm text-slate-400">{s.text}</p>
@@ -118,7 +125,7 @@ export function Who({ t }) {
               <ul className="mt-4 space-y-3">
                 {t.who.fitItems.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-sm text-slate-300">
-                    <span className="mt-0.5 text-ai">✓</span> {f}
+                    <Icon name="check" className="mt-0.5 h-4 w-4 shrink-0 text-ai" strokeWidth={2.5} /> {f}
                   </li>
                 ))}
               </ul>
@@ -221,8 +228,10 @@ export function Cases({ t }) {
           {t.cases.items.map((c, i) => (
             <Reveal key={c.title} delay={(i % 4) + 1}>
               <div className="glass card-hover h-full rounded-2xl p-6">
-                <span className="text-3xl">{c.icon}</span>
-                <h3 className="mt-3 font-display text-lg font-semibold text-white">{c.title}</h3>
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-ai/20 text-ai">
+                  <Icon name={c.icon} className="h-5 w-5" />
+                </div>
+                <h3 className="mt-4 font-display text-lg font-semibold text-white">{c.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-400">{c.text}</p>
               </div>
             </Reveal>
