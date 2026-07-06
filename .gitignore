@@ -7,6 +7,9 @@ site/out/
 deploy-hostgator/
 deploy-hostgator.zip
 
+# dist/ é versionada de propósito: o cPanel Git deploy copia
+# esses arquivos estáticos para o public_html (sem build no servidor)
+
 # logs
 *.log
 

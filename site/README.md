@@ -14,7 +14,30 @@ npm run dev
 
 Abra http://localhost:3000.
 
-## Publicar na HostGator (ou qualquer hospedagem cPanel)
+## Deploy automático via cPanel Git (HostGator) — método atual
+
+O repositório já contém:
+
+- `.cpanel.yml` (na raiz): instruções de deploy — copia `dist/` para o document root do domínio.
+- `dist/` (na raiz): o site estático buildado, versionado de propósito porque a HostGator não roda `npm build`.
+
+Fluxo de atualização:
+
+```bash
+cd site
+npm run build                 # gera site/out
+rm -rf ../dist && cp -r out ../dist   # atualiza a pasta dist
+cd .. && git add -A && git commit -m "build: atualiza dist" && git push
+```
+
+Depois, no cPanel → Git Version Control → Manage → Pull or Deploy:
+
+1. Clique em **Update from Remote** (puxa o novo commit).
+2. Clique em **Deploy HEAD Commit** (copia `dist/` para o site).
+
+Se o document root do domínio mudar, ajuste o caminho em `.cpanel.yml`.
+
+## Publicar na HostGator manualmente (alternativa)
 
 A HostGator não roda Node.js/Next.js diretamente — é preciso enviar a versão estática:
 

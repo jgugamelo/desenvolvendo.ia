@@ -1,0 +1,8 @@
+ErrorDocument 404 /404.html
+
+# Cache para assets com hash
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+</IfModule>

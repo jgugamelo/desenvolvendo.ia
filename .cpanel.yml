@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home3/imagin80/public_html/desenvolvendo.ia.br/
+    - /bin/cp -R dist/. $DEPLOYPATH
