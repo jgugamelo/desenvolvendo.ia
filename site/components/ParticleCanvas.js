@@ -30,7 +30,7 @@ export default function ParticleCanvas() {
 
     function initParticles() {
       const area = window.innerWidth * window.innerHeight;
-      const count = Math.min(Math.floor(area / 16000), 110);
+      const count = Math.min(Math.floor(area / 11500), 150);
       particles = Array.from({ length: count }, () => ({
         x: Math.random() * window.innerWidth,
         y: Math.random() * window.innerHeight,
@@ -43,8 +43,8 @@ export default function ParticleCanvas() {
     function step() {
       ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
-      const LINK = 130;
-      const MOUSE_R = 190;
+      const LINK = 150;
+      const MOUSE_R = 230;
 
       for (const p of particles) {
         // gentle mouse attraction
@@ -84,11 +84,11 @@ export default function ParticleCanvas() {
           const dy = a.y - b.y;
           const dist = Math.hypot(dx, dy);
           if (dist < LINK) {
-            let alpha = (1 - dist / LINK) * 0.35;
+            let alpha = (1 - dist / LINK) * 0.45;
             // brighten links near the mouse
             if (mouse.x !== null) {
               const mid = Math.hypot((a.x + b.x) / 2 - mouse.x, (a.y + b.y) / 2 - mouse.y);
-              if (mid < MOUSE_R) alpha += (1 - mid / MOUSE_R) * 0.4;
+              if (mid < MOUSE_R) alpha += (1 - mid / MOUSE_R) * 0.5;
             }
             ctx.strokeStyle = `rgba(91, 155, 255, ${alpha.toFixed(3)})`;
             ctx.lineWidth = 1;
@@ -102,10 +102,10 @@ export default function ParticleCanvas() {
 
       // dots
       for (const p of particles) {
-        let glow = 0.5;
+        let glow = 0.65;
         if (mouse.x !== null) {
           const dist = Math.hypot(p.x - mouse.x, p.y - mouse.y);
-          if (dist < MOUSE_R) glow += (1 - dist / MOUSE_R) * 0.5;
+          if (dist < MOUSE_R) glow += (1 - dist / MOUSE_R) * 0.35;
         }
         ctx.fillStyle = `rgba(34, 211, 170, ${glow.toFixed(3)})`;
         ctx.beginPath();
@@ -142,7 +142,7 @@ export default function ParticleCanvas() {
   return (
     <canvas
       ref={canvasRef}
-      className="pointer-events-none fixed inset-0 z-0 opacity-70"
+      className="pointer-events-none fixed inset-0 z-0 opacity-90"
       aria-hidden="true"
     />
   );

@@ -29,6 +29,8 @@ export const translations = {
     problem: {
       label: 'O problema',
       title: 'Sua operação gera dados. Mas gera clareza?',
+      intro:
+        'Rodamos um diagnóstico rápido: se você se reconhece em pelo menos dois pontos ao lado, há espaço claro para IA e automação gerarem resultado na sua operação.',
       items: [
         {
           icon: 'timer',
@@ -67,6 +69,21 @@ export const translations = {
         { icon: 'bar-chart-3', title: 'Dashboards gerenciais', text: 'Visão clara para decidir com dados.' },
         { icon: 'zap', title: 'Automações e integrações', text: 'WhatsApp, CRM, planilhas e APIs conectados.' },
         { icon: 'graduation-cap', title: 'Treinamento e acompanhamento', text: 'Sua equipe evolui junto com a tecnologia.' },
+      ],
+      integrationsLabel: 'Conectamos com o que você já usa',
+      integrations: [
+        'WhatsApp',
+        'CRM',
+        'Google Sheets',
+        'n8n',
+        'E-mail',
+        'APIs',
+        'Formulários',
+        'Instagram',
+        'ERP',
+        'Google Calendar',
+        'Excel',
+        'Webhooks',
       ],
     },
     products: {
@@ -218,21 +235,25 @@ export const translations = {
           icon: 'graduation-cap',
           title: 'Escola',
           text: 'Redução de perda de leads de matrícula com resposta imediata e follow-up automático.',
+          tag: 'Menos matrículas perdidas',
         },
         {
           icon: 'stethoscope',
           title: 'Clínica',
           text: 'Agendamentos organizados e follow-up de pacientes sem esforço manual.',
+          tag: 'Agenda organizada sem esforço',
         },
         {
           icon: 'home',
           title: 'Imobiliária',
           text: 'Qualificação automática de contatos antes de chegar ao corretor.',
+          tag: 'Corretor recebe lead pronto',
         },
         {
           icon: 'bar-chart-3',
           title: 'Gestão',
           text: 'Gestor acompanhando sentimento e produtividade da equipe em tempo real.',
+          tag: 'Visão da equipe em tempo real',
         },
       ],
     },
@@ -317,6 +338,8 @@ export const translations = {
     problem: {
       label: 'The problem',
       title: 'Your operation produces data. Does it produce clarity?',
+      intro:
+        'A quick diagnosis: if you recognize your business in at least two of these points, there is clear room for AI and automation to drive results in your operation.',
       items: [
         {
           icon: 'timer',
@@ -355,6 +378,21 @@ export const translations = {
         { icon: 'bar-chart-3', title: 'Executive dashboards', text: 'Clear visibility to decide with data.' },
         { icon: 'zap', title: 'Automations & integrations', text: 'Chat, CRM, spreadsheets and APIs connected.' },
         { icon: 'graduation-cap', title: 'Training & follow-through', text: 'Your team evolves with the technology.' },
+      ],
+      integrationsLabel: 'We connect with what you already use',
+      integrations: [
+        'WhatsApp',
+        'CRM',
+        'Google Sheets',
+        'n8n',
+        'Email',
+        'APIs',
+        'Forms',
+        'Instagram',
+        'ERP',
+        'Google Calendar',
+        'Excel',
+        'Webhooks',
       ],
     },
     products: {
@@ -506,21 +544,25 @@ export const translations = {
           icon: 'stethoscope',
           title: 'Clinic',
           text: 'Organized scheduling and patient follow-up with zero manual effort.',
+          tag: 'Organized schedule, zero rework',
         },
         {
           icon: 'home',
           title: 'Real estate',
           text: 'Automatic contact qualification before reaching the agent.',
+          tag: 'Agents get qualified leads',
         },
         {
           icon: 'scale',
           title: 'Law firm',
           text: 'Faster intake with AI triage and consistent follow-up.',
+          tag: 'Faster, consistent intake',
         },
         {
           icon: 'bar-chart-3',
           title: 'Management',
           text: 'Managers tracking sentiment and team productivity in real time.',
+          tag: 'Real-time team visibility',
         },
       ],
     },

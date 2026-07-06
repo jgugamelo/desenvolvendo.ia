@@ -102,6 +102,105 @@ html {
   to { transform: scaleY(1); }
 }
 
+/* ---------- spotlight card (mouse-follow highlight) ---------- */
+.spotlight {
+  position: relative;
+  overflow: hidden;
+}
+.spotlight::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    340px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(46, 124, 246, 0.13),
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+.spotlight:hover::before {
+  opacity: 1;
+}
+
+/* ---------- diagnostic rows (problem section) ---------- */
+.diag-row {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  border: 1px solid rgba(91, 155, 255, 0.1);
+  border-left: 3px solid rgba(248, 113, 113, 0.4);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(12, 27, 58, 0.45);
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.diag-row:hover {
+  border-left-color: #f87171;
+  transform: translateX(6px);
+}
+.diag-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(248, 113, 113, 0.7);
+  padding-top: 0.35rem;
+}
+
+/* ---------- solution pipeline (connected nodes) ---------- */
+.node-pulse {
+  position: absolute;
+  inset: -8px;
+  border-radius: 9999px;
+  border: 1px solid rgba(34, 211, 170, 0.4);
+  animation: ringPulse 3s ease-out infinite;
+}
+@keyframes ringPulse {
+  0% { transform: scale(0.85); opacity: 0.9; }
+  70% { opacity: 0; }
+  100% { transform: scale(1.45); opacity: 0; }
+}
+.flow-line {
+  position: absolute;
+  top: 2.5rem;
+  left: 7%;
+  right: 7%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(46, 124, 246, 0.5) 15%,
+    rgba(34, 211, 170, 0.5) 85%,
+    transparent
+  );
+}
+.flow-dot {
+  position: absolute;
+  top: calc(2.5rem - 3px);
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: #22d3aa;
+  box-shadow: 0 0 14px 2px rgba(34, 211, 170, 0.8);
+  animation: flowMove 6s linear infinite;
+}
+@keyframes flowMove {
+  from { left: 7%; }
+  to { left: 93%; }
+}
+
+/* ---------- gradient border wrapper ---------- */
+.gborder {
+  background: linear-gradient(135deg, rgba(46, 124, 246, 0.65), rgba(34, 211, 170, 0.65));
+  padding: 1px;
+  border-radius: 1rem;
+}
+.gborder > * {
+  border-radius: calc(1rem - 1px);
+}
+
 /* ---------- scrollbar ---------- */
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: #050b18; }

@@ -1,0 +1,17 @@
+# Página de erro
+ErrorDocument 404 /404.html
+
+# Bloqueia acesso ao código-fonte e arquivos do repositório
+# (o deploy roda na mesma pasta do clone do Git)
+RedirectMatch 404 ^/site(/|$)
+RedirectMatch 404 ^/\.git(/|$)
+RedirectMatch 404 ^/\.gitignore$
+RedirectMatch 404 ^/\.cpanel\.yml$
+RedirectMatch 404 \.(md|docx)$
+
+# Cache para assets com hash no nome
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+</IfModule>

@@ -33,6 +33,8 @@ import {
   Youtube,
   AlertTriangle,
   CheckCircle2,
+  ArrowRight,
+  Sparkles,
 } from 'lucide-react';
 
 const ICONS = {
@@ -68,6 +70,8 @@ const ICONS = {
   youtube: Youtube,
   'alert-triangle': AlertTriangle,
   'check-circle': CheckCircle2,
+  'arrow-right': ArrowRight,
+  sparkles: Sparkles,
 };
 
 /** Renders a lucide icon by name with consistent stroke weight. */
