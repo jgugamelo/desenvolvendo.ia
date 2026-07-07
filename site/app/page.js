@@ -11,6 +11,7 @@ import { Problem, Solution, Products, Who, How, Plans, Cases, FinalCta } from '@
 import Toolkit from '@/components/Toolkit';
 import SentimentDemo from '@/components/SentimentDemo';
 import DashboardsSection from '@/components/DashboardsSection';
+import Faq from '@/components/Faq';
 import LeadForm from '@/components/LeadForm';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -51,6 +52,7 @@ export default function Page() {
       <How t={t} />
       <Plans t={t} />
       <Cases t={t} />
+      <Faq t={t} />
       <FinalCta t={t} lang={lang} />
       <LeadForm t={t} lang={lang} />
       <Footer t={t} lang={lang} setLang={setLang} />

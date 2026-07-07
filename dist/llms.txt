@@ -1,0 +1,34 @@
+# desenvolvendo.ia
+
+> Agência de inteligência artificial aplicada a vendas, atendimento e gestão. Criamos agentes de IA, análise de sentimento em tempo real, automações e dashboards gerenciais para empresas que querem vender mais, atender melhor e decidir com dados.
+
+Site: https://desenvolvendo.ia.br
+Contato: WhatsApp +55 21 99947-3307 · contato@desenvolvendo.ia
+Idiomas: Português (Brasil) e Inglês
+
+## O que fazemos
+
+- **Atendimento.IA**: agentes de IA para atendimento, triagem, dúvidas frequentes e encaminhamento inteligente para equipe humana.
+- **SDR.IA**: agente comercial de IA para qualificação, follow-up, recuperação de leads e agendamento automático.
+- **Sentimento.IA**: análise de sentimento em tempo real nas conversas (WhatsApp e outros canais), com alertas de risco de perda de lead, sugestões de abordagem e relatórios de qualidade por atendente — nosso diferencial proprietário.
+- **Dashboards.IA**: painéis comerciais, operacionais, financeiros e de atendimento criados com IA.
+- **Automações Inteligentes**: integrações entre WhatsApp, CRM, planilhas, formulários, e-mail, APIs e sistemas (n8n e afins).
+- **Operação Inteligente 360**: projeto completo com CRM, IA, sentimento, dashboards, automações e suporte contínuo.
+- **Projetos sob medida**: desenvolvimento personalizado de ponta a ponta envolvendo IA, dados e automação.
+
+## Kit Super Ferramentas de IA (assinatura)
+
+Pacote completo por assinatura mensal: CRM com gestor de WhatsApp com IA integrada e análise de sentimento em tempo real, ligações por WhatsApp, disparador com IA, creator para geração de imagens e criador de dashboards com IA.
+
+- Preço Brasil: R$ 890/mês (mensal) ou R$ 690/mês no plano anual no cartão.
+- Price (international/EN): $249/mo monthly or $197/mo on the annual plan.
+
+## Para quem
+
+Educação (escolas, cursos, EAD), clínicas e estética, imobiliárias, advocacia, serviços locais, franquias e redes — qualquer operação que receba leads e atendimentos digitais e queira mais controle, velocidade e previsibilidade.
+
+## Como funciona
+
+1. Diagnóstico da operação → 2. Mapeamento de processos e dados → 3. Desenho da solução → 4. Implantação → 5. Treinamento → 6. Acompanhamento de indicadores → 7. Otimização contínua.
+
+O primeiro passo recomendado é solicitar um diagnóstico gratuito pelo site ou WhatsApp.

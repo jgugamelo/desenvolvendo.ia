@@ -23,6 +23,10 @@ deploy-hostgator.zip
 /icon-192.png
 /icon-512.png
 /apple-touch-icon.png
+/robots.txt
+/sitemap.xml
+/llms.txt
+/og-image.png
 
 # logs
 *.log

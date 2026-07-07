@@ -39,6 +39,7 @@ import {
   Send,
   Image as ImageIcon,
   Crown,
+  Plus,
 } from 'lucide-react';
 
 const ICONS = {
@@ -80,6 +81,7 @@ const ICONS = {
   send: Send,
   image: ImageIcon,
   crown: Crown,
+  plus: Plus,
 };
 
 /** Renders a lucide icon by name with consistent stroke weight. */

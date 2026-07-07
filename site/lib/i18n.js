@@ -307,6 +307,36 @@ export const translations = {
         },
       ],
     },
+    faq: {
+      label: 'Perguntas frequentes',
+      title: 'Dúvidas comuns sobre IA aplicada a negócios',
+      items: [
+        {
+          q: 'O que a desenvolvendo.ia faz?',
+          a: 'Somos uma agência de inteligência artificial que cria agentes de IA para atendimento e vendas, análise de sentimento em tempo real, automações e dashboards gerenciais. Trabalhamos com projetos sob medida e com o Kit Super Ferramentas de IA por assinatura.',
+        },
+        {
+          q: 'Quanto custa implantar IA na minha empresa?',
+          a: 'O Kit Super Ferramentas de IA custa R$ 890/mês, ou R$ 690/mês no plano anual no cartão. Projetos personalizados variam conforme o escopo — o diagnóstico gratuito indica o investimento ideal para a sua operação.',
+        },
+        {
+          q: 'O que está incluído no Kit Super Ferramentas de IA?',
+          a: 'CRM com gestor de WhatsApp com IA integrada e análise de sentimento em tempo real, ligações por WhatsApp, disparador com IA, creator para geração de imagens e criador de dashboards com IA — tudo em uma única assinatura.',
+        },
+        {
+          q: 'A IA substitui minha equipe de atendimento?',
+          a: 'Não. A IA assume tarefas repetitivas como triagem, dúvidas frequentes e follow-up, e orienta sua equipe com análise de sentimento e sugestões em tempo real. Sua equipe foca no que exige julgamento humano — e atende mais e melhor.',
+        },
+        {
+          q: 'O que é análise de sentimento em tempo real?',
+          a: 'É a leitura automática do clima de cada conversa (positivo, neutro ou negativo) enquanto ela acontece. O sistema alerta sobre risco de perda do lead, sugere abordagens e dá ao gestor visão da qualidade do atendimento por atendente e por período.',
+        },
+        {
+          q: 'Quanto tempo leva para começar a usar IA?',
+          a: 'O Kit Super Ferramentas de IA fica ativo em poucos dias. Projetos sob medida começam com um diagnóstico da operação e seguem um plano de implantação por etapas, com treinamento da equipe e acompanhamento contínuo.',
+        },
+      ],
+    },
     finalCta: {
       title: 'Quer entender onde a IA pode gerar resultado na sua operação?',
       text: 'Solicite um diagnóstico e receba um mapa das melhores oportunidades para aplicar IA, automações e dashboards na sua empresa.',
@@ -663,6 +693,36 @@ export const translations = {
           title: 'Management',
           text: 'Managers tracking sentiment and team productivity in real time.',
           tag: 'Real-time team visibility',
+        },
+      ],
+    },
+    faq: {
+      label: 'FAQ',
+      title: 'Common questions about AI for business',
+      items: [
+        {
+          q: 'What does desenvolvendo.ia do?',
+          a: 'We are an artificial intelligence agency building AI agents for support and sales, real-time sentiment analysis, workflow automations and executive dashboards. We deliver custom projects and the AI Super Tools Kit subscription.',
+        },
+        {
+          q: 'How much does it cost to bring AI into my business?',
+          a: 'The AI Super Tools Kit costs $249/mo, or $197/mo on the annual card plan. Custom projects vary by scope — a free diagnosis points to the ideal investment for your operation.',
+        },
+        {
+          q: 'What is included in the AI Super Tools Kit?',
+          a: 'CRM with an AI-powered WhatsApp manager and real-time sentiment analysis, WhatsApp voice calls, AI campaign sender, image creator and AI dashboard builder — all in a single subscription.',
+        },
+        {
+          q: 'Does AI replace my support team?',
+          a: 'No. AI takes over repetitive tasks such as triage, FAQs and follow-up, and coaches your team with real-time sentiment analysis and suggestions. Your team focuses on what requires human judgment.',
+        },
+        {
+          q: 'What is real-time sentiment analysis?',
+          a: 'It is the automatic reading of each conversation’s mood (positive, neutral or negative) as it happens. The system alerts on lead-loss risk, suggests approaches and gives managers visibility into service quality per rep and per period.',
+        },
+        {
+          q: 'How long until we are up and running?',
+          a: 'The AI Super Tools Kit goes live within days. Custom projects start with an operation diagnosis and follow a staged implementation plan, with team training and ongoing monitoring.',
         },
       ],
     },
