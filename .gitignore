@@ -12,11 +12,17 @@ deploy-hostgator.zip
 
 # artefatos que o deploy do cPanel copia para a raiz do docroot
 # (mesma pasta do clone) — ignorados para não sujar o git status
+# (árvore suja bloqueia o Deploy HEAD Commit no cPanel)
 /index.html
 /404.html
 /index.txt
 /_next/
 /.htaccess
+/favicon.ico
+/favicon-32.png
+/icon-192.png
+/icon-512.png
+/apple-touch-icon.png
 
 # logs
 *.log
