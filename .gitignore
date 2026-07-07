@@ -29,6 +29,7 @@ deploy-hostgator.zip
 /og-image.png
 /send-lead.php
 /leads/
+/.well-known/
 
 # logs
 *.log
