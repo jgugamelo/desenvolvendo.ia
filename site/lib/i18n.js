@@ -33,44 +33,18 @@ export const translations = {
       intro:
         'Rodamos um diagnóstico rápido: se você se reconhece em pelo menos dois pontos ao lado, há espaço claro para IA e automação gerarem resultado na sua operação.',
       items: [
-        {
-          icon: 'timer',
-          title: 'Leads sem resposta rápida',
-          text: 'Sua empresa recebe leads, mas nem sempre responde no tempo em que o cliente ainda está quente.',
-        },
-        {
-          icon: 'eye',
-          title: 'Zero visão sobre as conversas',
-          text: 'O gestor não sabe a qualidade real do que a equipe fala com os clientes todos os dias.',
-        },
-        {
-          icon: 'repeat',
-          title: 'Follow-up sem padrão',
-          text: 'Cada atendente faz do seu jeito. Leads esfriam e oportunidades se perdem no caminho.',
-        },
-        {
-          icon: 'puzzle',
-          title: 'Dados espalhados',
-          text: 'WhatsApp, planilhas, CRM e relatórios desconectados. Nenhuma fonte única de verdade.',
-        },
-        {
-          icon: 'trending-down',
-          title: 'Impossível prever resultados',
-          text: 'Sem indicadores confiáveis, prever vendas, atendimento e operação vira adivinhação.',
-        },
+        { icon: 'timer', title: 'Leads sem resposta rápida', text: 'Leads esfriam esperando retorno.' },
+        { icon: 'eye', title: 'Zero visão das conversas', text: 'O gestor não vê a qualidade do atendimento.' },
+        { icon: 'repeat', title: 'Follow-up sem padrão', text: 'Cada atendente faz do seu jeito.' },
+        { icon: 'puzzle', title: 'Dados espalhados', text: 'WhatsApp, planilhas e CRM desconectados.' },
+        { icon: 'trending-down', title: 'Zero previsibilidade', text: 'Prever resultados vira adivinhação.' },
       ],
     },
-    solution: {
-      label: 'A solução',
+    products: {
+      label: 'Soluções',
       title: 'Um sistema completo, não um chatbot genérico',
-      text: 'A desenvolvendo.ia desenha e conecta IA, CRM, automações e dados para transformar conversas e processos em uma operação inteligente. Cada projeto é construído sob medida para a realidade da sua empresa — nada de pacotes prontos.',
-      blocks: [
-        { icon: 'bot', title: 'Agentes de IA', text: 'Para atendimento e vendas, 24/7.' },
-        { icon: 'message-circle', title: 'Análise de sentimento', text: 'Em tempo real, conversa por conversa.' },
-        { icon: 'bar-chart-3', title: 'Dashboards gerenciais', text: 'Visão clara para decidir com dados.' },
-        { icon: 'zap', title: 'Automações e integrações', text: 'WhatsApp, CRM, planilhas e APIs conectados.' },
-        { icon: 'graduation-cap', title: 'Treinamento e acompanhamento', text: 'Sua equipe evolui junto com a tecnologia.' },
-      ],
+      subtitle:
+        'Cada entrega é desenhada sob medida para a sua operação — nada de pacotes prontos.',
       integrationsLabel: 'Conectamos com o que você já usa',
       integrations: [
         'WhatsApp',
@@ -86,13 +60,7 @@ export const translations = {
         'Webhooks',
         'Sistemas internos',
       ],
-      cta: 'Automatizar minha operação',
-    },
-    products: {
-      label: 'Produtos e serviços',
-      title: 'Soluções para cada etapa da sua operação',
-      subtitle:
-        'Estas são as nossas frentes de atuação — cada entrega é personalizada para o seu processo, seus canais e suas metas.',
+      integrationsCta: 'Automatizar minha operação',
       demo: {
         title: 'IA em ação · WhatsApp',
         messages: [
@@ -115,74 +83,26 @@ export const translations = {
         cta: 'Falar sobre um projeto sob medida',
       },
       items: [
-        {
-          icon: 'messages-square',
-          name: 'Atendimento.IA',
-          text: 'Agentes para atendimento, triagem, dúvidas frequentes e encaminhamento inteligente para a equipe humana.',
-        },
-        {
-          icon: 'target',
-          name: 'SDR.IA',
-          text: 'Agente comercial para qualificação, follow-up, recuperação de leads e agendamento automático.',
-        },
-        {
-          icon: 'heart-pulse',
-          name: 'Sentimento.IA',
-          text: 'Análise de sentimento em tempo real para orientar atendentes e dar visão de qualidade ao gestor.',
-        },
-        {
-          icon: 'layout-dashboard',
-          name: 'Dashboards.IA',
-          text: 'Painéis comerciais, operacionais, financeiros e de atendimento — tudo em um só lugar.',
-        },
-        {
-          icon: 'workflow',
-          name: 'Automações Inteligentes',
-          text: 'Integração entre WhatsApp, CRM, planilhas, formulários, e-mail, APIs e sistemas.',
-        },
-        {
-          icon: 'rocket',
-          name: 'Operação Inteligente 360',
-          text: 'Projeto completo com CRM, IA, sentimento, dashboards, automações e suporte contínuo.',
-        },
+        { icon: 'messages-square', name: 'Atendimento.IA', text: 'Atendimento 24/7 com triagem e encaminhamento inteligente.' },
+        { icon: 'target', name: 'SDR.IA', text: 'Qualificação, follow-up e agendamento automáticos.' },
+        { icon: 'heart-pulse', name: 'Sentimento.IA', text: 'Sentimento das conversas em tempo real.' },
+        { icon: 'layout-dashboard', name: 'Dashboards.IA', text: 'Todos os indicadores em um só painel.' },
+        { icon: 'workflow', name: 'Automações Inteligentes', text: 'WhatsApp, CRM, planilhas e APIs conectados.' },
+        { icon: 'rocket', name: 'Operação Inteligente 360', text: 'CRM + IA + dashboards + suporte, tudo junto.' },
       ],
     },
     toolkit: {
       label: 'Kit Super Ferramentas de IA',
       title: 'Todas as ferramentas de IA da sua operação em uma assinatura',
       subtitle:
-        'Um pacote completo, pronto para usar: CRM inteligente, WhatsApp com IA, disparos, criação de imagens e dashboards — tudo integrado, por um valor mensal fixo.',
+        'CRM, WhatsApp com IA, disparos, imagens e dashboards — integrados, por um valor mensal fixo.',
       features: [
-        {
-          icon: 'messages-square',
-          title: 'CRM + Gestor de WhatsApp com IA',
-          text: 'Gestão completa das conversas com IA integrada e análise de sentimento em tempo real.',
-        },
-        {
-          icon: 'heart-pulse',
-          title: 'Análise de sentimento ao vivo',
-          text: 'Cada conversa monitorada, com alertas e orientação para a equipe.',
-        },
-        {
-          icon: 'phone',
-          title: 'Ligações por WhatsApp',
-          text: 'Chamadas de voz direto da plataforma, registradas no CRM.',
-        },
-        {
-          icon: 'send',
-          title: 'Disparador com IA',
-          text: 'Campanhas e follow-ups em massa com mensagens personalizadas por IA.',
-        },
-        {
-          icon: 'image',
-          title: 'Creator de imagens',
-          text: 'Geração de imagens com IA para posts, anúncios e campanhas.',
-        },
-        {
-          icon: 'bar-chart-3',
-          title: 'Criador de dashboards com IA',
-          text: 'Monte painéis gerenciais conversando com a IA, sem depender de TI.',
-        },
+        { icon: 'messages-square', title: 'CRM + WhatsApp com IA', text: 'Conversas gerenciadas com IA e sentimento ao vivo.' },
+        { icon: 'heart-pulse', title: 'Sentimento em tempo real', text: 'Alertas e orientação ao vivo para a equipe.' },
+        { icon: 'phone', title: 'Ligações por WhatsApp', text: 'Chamadas de voz registradas no CRM.' },
+        { icon: 'send', title: 'Disparador com IA', text: 'Campanhas em massa personalizadas por IA.' },
+        { icon: 'image', title: 'Creator de imagens', text: 'Imagens com IA para posts e anúncios.' },
+        { icon: 'bar-chart-3', title: 'Dashboards com IA', text: 'Painéis criados conversando com a IA.' },
       ],
       priceLabel: 'Assinatura mensal',
       priceMonthly: 'R$ 890',
@@ -199,7 +119,7 @@ export const translations = {
     sentiment: {
       label: 'Diferencial proprietário',
       title: 'Sua equipe não precisa apenas responder rápido. Precisa responder do jeito certo.',
-      text: 'O Sentimento.IA lê cada conversa em tempo real, identifica o clima do cliente e orienta o atendente antes que o lead esfrie.',
+      text: 'O Sentimento.IA lê cada conversa ao vivo e orienta o atendente antes que o lead esfrie.',
       features: [
         'Identificação de sentimento positivo, neutro ou negativo',
         'Alertas em tempo real para o atendente',
@@ -238,92 +158,83 @@ export const translations = {
       sentimentByAgent: 'Sentimento por atendente',
       cta: 'Quero ter essa previsibilidade',
     },
-    who: {
+    niches: {
       label: 'Para quem é',
-      title: 'Feito para operações que vivem de conversas e leads',
-      segments: [
-        { icon: 'graduation-cap', name: 'Educação', text: 'Escolas, cursos, polos EAD e cursos técnicos.' },
-        { icon: 'stethoscope', name: 'Clínicas e estética', text: 'Saúde particular, estética e odontologia.' },
-        { icon: 'home', name: 'Imobiliárias', text: 'Qualificação e follow-up de contatos.' },
-        { icon: 'scale', name: 'Advocacia', text: 'Triagem e atendimento de novos casos.' },
-        { icon: 'wrench', name: 'Serviços locais', text: 'Empresas de serviços com demanda digital.' },
-        { icon: 'building-2', name: 'Franquias e redes', text: 'Operações com múltiplas unidades.' },
+      title: 'Escolha o seu setor e veja a IA aplicada',
+      painsTitle: 'Dores comuns',
+      exampleTitle: 'Como a IA resolve',
+      tabs: [
+        {
+          icon: 'graduation-cap',
+          name: 'Educação',
+          pains: ['Leads de matrícula sem resposta rápida', 'Follow-up manual de interessados', 'Secretaria sobrecarregada'],
+          example: 'Agente de IA responde interessados em segundos, agenda visitas e faz follow-up até a matrícula.',
+          result: 'Menos matrículas perdidas',
+        },
+        {
+          icon: 'stethoscope',
+          name: 'Clínicas e estética',
+          pains: ['Agenda com buracos e faltas', 'Pacientes sem confirmação', 'Recepção presa ao WhatsApp'],
+          example: 'IA confirma consultas, gerencia agendamentos e lembra pacientes automaticamente.',
+          result: 'Agenda cheia sem esforço',
+        },
+        {
+          icon: 'home',
+          name: 'Imobiliárias',
+          pains: ['Corretores atendendo curiosos', 'Leads de portais sem triagem', 'Follow-up esquecido'],
+          example: 'IA qualifica o contato, entende o perfil buscado e entrega o lead pronto ao corretor.',
+          result: 'Corretor só fala com lead pronto',
+        },
+        {
+          icon: 'scale',
+          name: 'Advocacia',
+          pains: ['Triagem manual de novos casos', 'Retorno lento a potenciais clientes', 'Dados sensíveis em conversas soltas'],
+          example: 'IA faz a triagem inicial do caso com segurança e agenda a consulta com o advogado certo.',
+          result: 'Captação de casos organizada',
+        },
+        {
+          icon: 'wrench',
+          name: 'Serviços locais',
+          pains: ['Orçamentos demoram a sair', 'Cliente some após o primeiro contato', 'Agenda desorganizada'],
+          example: 'IA responde na hora, coleta as informações do serviço e agenda a visita técnica.',
+          result: 'Mais orçamentos fechados',
+        },
+        {
+          icon: 'building-2',
+          name: 'Franquias e redes',
+          pains: ['Atendimento varia por unidade', 'Gestor sem visão consolidada', 'Dados espalhados por unidade'],
+          example: 'IA padroniza o atendimento e dashboards consolidam todas as unidades em uma visão só.',
+          result: 'Rede inteira sob controle',
+        },
       ],
       fitTitle: 'Sua empresa tem fit se:',
       fitItems: [
         'Recebe leads ou atendimentos digitais',
         'Tem equipe comercial ou de atendimento',
         'Usa WhatsApp, CRM, planilhas ou sistemas',
-        'Precisa de mais controle, velocidade e previsibilidade',
+        'Quer controle, velocidade e previsibilidade',
       ],
     },
     how: {
       label: 'Como funciona',
-      title: 'Do diagnóstico à otimização contínua',
+      title: 'Do diagnóstico à evolução contínua',
       steps: [
-        { title: 'Diagnóstico da operação', text: 'Entendemos processos, canais e gargalos.' },
-        { title: 'Mapeamento de processos e dados', text: 'Onde estão os dados e o que precisa fluir.' },
-        { title: 'Desenho da solução', text: 'Arquitetura de IA, automações e painéis sob medida.' },
-        { title: 'Implantação', text: 'IA, automações e dashboards entrando em operação.' },
-        { title: 'Treinamento da equipe', text: 'Seu time dominando as ferramentas.' },
-        { title: 'Acompanhamento de indicadores', text: 'Métricas monitoradas de perto.' },
-        { title: 'Otimização contínua', text: 'Evolução constante com base em dados.' },
+        { title: 'Diagnóstico', text: 'Processos, canais e gargalos mapeados.' },
+        { title: 'Desenho da solução', text: 'IA e automações sob medida.' },
+        { title: 'Implantação e treinamento', text: 'Tudo no ar, equipe dominando.' },
+        { title: 'Evolução contínua', text: 'Indicadores monitorados, otimização constante.' },
       ],
     },
     plans: {
       label: 'Formatos de contratação',
       title: 'Um formato para cada momento da sua empresa',
       items: [
-        {
-          name: 'Diagnóstico IA Express',
-          text: 'Mapa rápido das melhores oportunidades de IA, automações e dashboards na sua operação.',
-          tag: 'Comece aqui',
-        },
-        {
-          name: 'Projeto de Implantação',
-          text: 'Implementação da solução desenhada: agentes, automações, integrações e painéis.',
-        },
-        {
-          name: 'Suporte e Evolução',
-          text: 'Mensalidade para acompanhamento, ajustes e evolução contínua da operação.',
-        },
-        {
-          name: 'Operação Inteligente 360',
-          text: 'Projeto completo: CRM, IA, sentimento, dashboards, automações e suporte dedicado.',
-          tag: 'Mais completo',
-        },
+        { name: 'Diagnóstico IA Express', text: 'Mapa rápido de oportunidades na sua operação.', tag: 'Comece aqui' },
+        { name: 'Projeto de Implantação', text: 'A solução desenhada entrando em produção.' },
+        { name: 'Suporte e Evolução', text: 'Acompanhamento mensal e melhorias contínuas.' },
+        { name: 'Operação Inteligente 360', text: 'CRM, IA, dashboards e suporte dedicado.', tag: 'Mais completo' },
       ],
       cta: 'Solicite um diagnóstico para entender o melhor formato para sua empresa.',
-    },
-    cases: {
-      label: 'Exemplos de aplicação',
-      title: 'Onde a IA já gera resultado prático',
-      items: [
-        {
-          icon: 'graduation-cap',
-          title: 'Escola',
-          text: 'Redução de perda de leads de matrícula com resposta imediata e follow-up automático.',
-          tag: 'Menos matrículas perdidas',
-        },
-        {
-          icon: 'stethoscope',
-          title: 'Clínica',
-          text: 'Agendamentos organizados e follow-up de pacientes sem esforço manual.',
-          tag: 'Agenda organizada sem esforço',
-        },
-        {
-          icon: 'home',
-          title: 'Imobiliária',
-          text: 'Qualificação automática de contatos antes de chegar ao corretor.',
-          tag: 'Corretor recebe lead pronto',
-        },
-        {
-          icon: 'bar-chart-3',
-          title: 'Gestão',
-          text: 'Gestor acompanhando sentimento e produtividade da equipe em tempo real.',
-          tag: 'Visão da equipe em tempo real',
-        },
-      ],
     },
     faq: {
       label: 'Perguntas frequentes',
@@ -442,44 +353,18 @@ export const translations = {
       intro:
         'A quick diagnosis: if you recognize your business in at least two of these points, there is clear room for AI and automation to drive results in your operation.',
       items: [
-        {
-          icon: 'timer',
-          title: 'Slow lead response',
-          text: 'Leads come in, but responses don’t always happen while the prospect is still hot.',
-        },
-        {
-          icon: 'eye',
-          title: 'No visibility into conversations',
-          text: 'Managers can’t see the real quality of what the team says to customers every day.',
-        },
-        {
-          icon: 'repeat',
-          title: 'Manual, inconsistent workflows',
-          text: 'Every rep follows their own process. Leads go cold and opportunities slip away.',
-        },
-        {
-          icon: 'puzzle',
-          title: 'Disconnected tools',
-          text: 'Chat apps, spreadsheets, CRM and reports living apart. No single source of truth.',
-        },
-        {
-          icon: 'trending-down',
-          title: 'No way to forecast',
-          text: 'Without reliable metrics, predicting sales and operations becomes guesswork.',
-        },
+        { icon: 'timer', title: 'Slow lead response', text: 'Leads go cold waiting for a reply.' },
+        { icon: 'eye', title: 'No conversation visibility', text: 'Managers can’t see service quality.' },
+        { icon: 'repeat', title: 'Inconsistent follow-up', text: 'Every rep follows their own process.' },
+        { icon: 'puzzle', title: 'Disconnected tools', text: 'Chat, spreadsheets and CRM living apart.' },
+        { icon: 'trending-down', title: 'Zero predictability', text: 'Forecasting becomes guesswork.' },
       ],
     },
-    solution: {
-      label: 'The solution',
+    products: {
+      label: 'Solutions',
       title: 'A complete system — not a generic chatbot',
-      text: 'desenvolvendo.ia designs and connects AI, CRM, automations and data to turn conversations and processes into an intelligent operation. Every project is custom-built around your business — no off-the-shelf packages.',
-      blocks: [
-        { icon: 'bot', title: 'AI agents', text: 'For support and sales, 24/7.' },
-        { icon: 'message-circle', title: 'Sentiment analysis', text: 'Real time, conversation by conversation.' },
-        { icon: 'bar-chart-3', title: 'Executive dashboards', text: 'Clear visibility to decide with data.' },
-        { icon: 'zap', title: 'Automations & integrations', text: 'Chat, CRM, spreadsheets and APIs connected.' },
-        { icon: 'graduation-cap', title: 'Training & follow-through', text: 'Your team evolves with the technology.' },
-      ],
+      subtitle:
+        'Every delivery is custom-built around your operation — no off-the-shelf packages.',
       integrationsLabel: 'We connect with what you already use',
       integrations: [
         'WhatsApp',
@@ -495,13 +380,7 @@ export const translations = {
         'Webhooks',
         'Internal systems',
       ],
-      cta: 'Automate my operation',
-    },
-    products: {
-      label: 'Products & services',
-      title: 'Solutions for every stage of your operation',
-      subtitle:
-        'These are our core practice areas — every delivery is tailored to your process, your channels and your goals.',
+      integrationsCta: 'Automate my operation',
       demo: {
         title: 'AI in action · Chat',
         messages: [
@@ -524,74 +403,26 @@ export const translations = {
         cta: 'Discuss a custom project',
       },
       items: [
-        {
-          icon: 'messages-square',
-          name: 'Support.AI',
-          text: 'AI agents for customer support, triage, FAQs and smart handoff to your human team.',
-        },
-        {
-          icon: 'target',
-          name: 'SDR.AI',
-          text: 'Sales agent for lead qualification, follow-up, lead recovery and automatic scheduling.',
-        },
-        {
-          icon: 'heart-pulse',
-          name: 'Sentiment.AI',
-          text: 'Real-time sentiment analysis to guide reps and give managers true quality visibility.',
-        },
-        {
-          icon: 'layout-dashboard',
-          name: 'Dashboards.AI',
-          text: 'Sales, operations, finance and support dashboards — all in one place.',
-        },
-        {
-          icon: 'workflow',
-          name: 'Smart Automations',
-          text: 'Integrations across chat, CRM, spreadsheets, forms, email, APIs and internal systems.',
-        },
-        {
-          icon: 'rocket',
-          name: 'Intelligent Operation 360',
-          text: 'Full project: CRM, AI, sentiment, dashboards, automations and ongoing support.',
-        },
+        { icon: 'messages-square', name: 'Support.AI', text: '24/7 support with smart triage and handoff.' },
+        { icon: 'target', name: 'SDR.AI', text: 'Automatic qualification, follow-up and scheduling.' },
+        { icon: 'heart-pulse', name: 'Sentiment.AI', text: 'Real-time conversation sentiment.' },
+        { icon: 'layout-dashboard', name: 'Dashboards.AI', text: 'Every KPI in a single panel.' },
+        { icon: 'workflow', name: 'Smart Automations', text: 'Chat, CRM, spreadsheets and APIs connected.' },
+        { icon: 'rocket', name: 'Intelligent Operation 360', text: 'CRM + AI + dashboards + support, combined.' },
       ],
     },
     toolkit: {
       label: 'AI Super Tools Kit',
       title: 'Every AI tool your operation needs, in one subscription',
       subtitle:
-        'A complete, ready-to-use package: smart CRM, AI-powered WhatsApp, bulk messaging, image creation and dashboards — fully integrated, for one fixed monthly price.',
+        'CRM, AI-powered WhatsApp, bulk messaging, images and dashboards — integrated, for one fixed monthly price.',
       features: [
-        {
-          icon: 'messages-square',
-          title: 'CRM + AI WhatsApp Manager',
-          text: 'Full conversation management with built-in AI and real-time sentiment analysis.',
-        },
-        {
-          icon: 'heart-pulse',
-          title: 'Live sentiment analysis',
-          text: 'Every conversation monitored, with alerts and coaching for your team.',
-        },
-        {
-          icon: 'phone',
-          title: 'WhatsApp voice calls',
-          text: 'Voice calls straight from the platform, logged in the CRM.',
-        },
-        {
-          icon: 'send',
-          title: 'AI campaign sender',
-          text: 'Bulk campaigns and follow-ups with AI-personalized messages.',
-        },
-        {
-          icon: 'image',
-          title: 'Image creator',
-          text: 'AI image generation for posts, ads and campaigns.',
-        },
-        {
-          icon: 'bar-chart-3',
-          title: 'AI dashboard builder',
-          text: 'Build executive dashboards by talking to the AI — no IT needed.',
-        },
+        { icon: 'messages-square', title: 'CRM + AI WhatsApp Manager', text: 'Conversations managed with AI and live sentiment.' },
+        { icon: 'heart-pulse', title: 'Live sentiment analysis', text: 'Real-time alerts and coaching for your team.' },
+        { icon: 'phone', title: 'WhatsApp voice calls', text: 'Voice calls logged in the CRM.' },
+        { icon: 'send', title: 'AI campaign sender', text: 'Bulk campaigns personalized by AI.' },
+        { icon: 'image', title: 'Image creator', text: 'AI images for posts and ads.' },
+        { icon: 'bar-chart-3', title: 'AI dashboard builder', text: 'Panels built by talking to the AI.' },
       ],
       priceLabel: 'Monthly subscription',
       priceMonthly: '$249',
@@ -608,7 +439,7 @@ export const translations = {
     sentiment: {
       label: 'Proprietary differentiator',
       title: 'Your team doesn’t just need to reply fast. It needs to reply right.',
-      text: 'Sentiment.AI reads every conversation in real time, detects the customer’s mood and coaches the rep before the lead goes cold.',
+      text: 'Sentiment.AI reads every conversation live and coaches the rep before the lead goes cold.',
       features: [
         'Positive, neutral or negative sentiment detection',
         'Real-time alerts for the rep',
@@ -647,92 +478,83 @@ export const translations = {
       sentimentByAgent: 'Sentiment per rep',
       cta: 'I want this predictability',
     },
-    who: {
+    niches: {
       label: 'Who it’s for',
-      title: 'Built for operations that run on conversations and leads',
-      segments: [
-        { icon: 'stethoscope', name: 'Clinics & med spas', text: 'Clinics, med spas and dental offices.' },
-        { icon: 'wrench', name: 'Local & home services', text: 'Service businesses with digital demand.' },
-        { icon: 'home', name: 'Real estate teams', text: 'Lead qualification and follow-up.' },
-        { icon: 'scale', name: 'Law firms', text: 'Intake triage and case follow-up.' },
-        { icon: 'briefcase', name: 'Agencies & SMBs', text: 'Small service businesses ready to scale.' },
-        { icon: 'building-2', name: 'Multi-location businesses', text: 'Operations across multiple units.' },
+      title: 'Pick your industry and see AI applied',
+      painsTitle: 'Common pains',
+      exampleTitle: 'How AI solves it',
+      tabs: [
+        {
+          icon: 'stethoscope',
+          name: 'Clinics & med spas',
+          pains: ['Gaps and no-shows in the schedule', 'Patients without confirmation', 'Front desk stuck on chat'],
+          example: 'AI confirms appointments, manages scheduling and reminds patients automatically.',
+          result: 'Full schedule, zero effort',
+        },
+        {
+          icon: 'wrench',
+          name: 'Local & home services',
+          pains: ['Quotes take too long', 'Customers vanish after first contact', 'Messy scheduling'],
+          example: 'AI replies instantly, collects job details and books the site visit.',
+          result: 'More quotes closed',
+        },
+        {
+          icon: 'home',
+          name: 'Real estate teams',
+          pains: ['Agents wasting time on lookers', 'Portal leads without triage', 'Forgotten follow-up'],
+          example: 'AI qualifies the contact, learns the buyer profile and hands agents a ready lead.',
+          result: 'Agents only talk to ready leads',
+        },
+        {
+          icon: 'scale',
+          name: 'Law firms',
+          pains: ['Manual intake triage', 'Slow response to prospects', 'Sensitive data in loose chats'],
+          example: 'AI runs secure case intake and books the consultation with the right attorney.',
+          result: 'Organized case intake',
+        },
+        {
+          icon: 'briefcase',
+          name: 'Agencies & SMBs',
+          pains: ['Support that doesn’t scale', 'Manual workflows everywhere', 'No operational visibility'],
+          example: 'AI agents and automations absorb repetitive work so the team scales without headcount.',
+          result: 'Scale without hiring',
+        },
+        {
+          icon: 'building-2',
+          name: 'Multi-location',
+          pains: ['Service varies by location', 'No consolidated view', 'Data scattered per unit'],
+          example: 'AI standardizes service and dashboards consolidate every location into one view.',
+          result: 'The whole network under control',
+        },
       ],
       fitTitle: 'You’re a fit if you:',
       fitItems: [
         'Receive digital leads or support requests',
         'Have a sales or support team',
-        'Use chat, CRM, spreadsheets or internal systems',
-        'Need more control, speed and predictability',
+        'Use chat, CRM, spreadsheets or systems',
+        'Want control, speed and predictability',
       ],
     },
     how: {
       label: 'How it works',
-      title: 'From diagnosis to continuous optimization',
+      title: 'From diagnosis to continuous evolution',
       steps: [
-        { title: 'Operation diagnosis', text: 'We map processes, channels and bottlenecks.' },
-        { title: 'Process & data mapping', text: 'Where data lives and what needs to flow.' },
-        { title: 'Solution design', text: 'Tailored AI, automation and dashboard architecture.' },
-        { title: 'Implementation', text: 'AI, automations and dashboards going live.' },
-        { title: 'Team training', text: 'Your team mastering the tools.' },
-        { title: 'KPI monitoring', text: 'Metrics tracked closely.' },
-        { title: 'Continuous optimization', text: 'Constant, data-driven improvement.' },
+        { title: 'Diagnosis', text: 'Processes, channels and bottlenecks mapped.' },
+        { title: 'Solution design', text: 'Tailored AI and automations.' },
+        { title: 'Launch & training', text: 'Everything live, team fluent.' },
+        { title: 'Continuous evolution', text: 'KPIs monitored, constant optimization.' },
       ],
     },
     plans: {
       label: 'Engagement models',
       title: 'A model for every stage of your business',
       items: [
-        {
-          name: 'AI Diagnosis Express',
-          text: 'A fast map of the best AI, automation and dashboard opportunities in your operation.',
-          tag: 'Start here',
-        },
-        {
-          name: 'Implementation Project',
-          text: 'Deployment of the designed solution: agents, automations, integrations and dashboards.',
-        },
-        {
-          name: 'Support & Evolution',
-          text: 'Monthly retainer for monitoring, tuning and continuous improvement.',
-        },
-        {
-          name: 'Intelligent Operation 360',
-          text: 'Full project: CRM, AI, sentiment, dashboards, automations and dedicated support.',
-          tag: 'Most complete',
-        },
+        { name: 'AI Diagnosis Express', text: 'A fast map of opportunities in your operation.', tag: 'Start here' },
+        { name: 'Implementation Project', text: 'The designed solution going live.' },
+        { name: 'Support & Evolution', text: 'Monthly monitoring and continuous improvement.' },
+        { name: 'Intelligent Operation 360', text: 'CRM, AI, dashboards and dedicated support.', tag: 'Most complete' },
       ],
       cta: 'Request a diagnosis to find the best model for your business.',
-    },
-    cases: {
-      label: 'Application examples',
-      title: 'Where AI already delivers practical results',
-      items: [
-        {
-          icon: 'stethoscope',
-          title: 'Clinic',
-          text: 'Organized scheduling and patient follow-up with zero manual effort.',
-          tag: 'Organized schedule, zero rework',
-        },
-        {
-          icon: 'home',
-          title: 'Real estate',
-          text: 'Automatic contact qualification before reaching the agent.',
-          tag: 'Agents get qualified leads',
-        },
-        {
-          icon: 'scale',
-          title: 'Law firm',
-          text: 'Faster intake with AI triage and consistent follow-up.',
-          tag: 'Faster, consistent intake',
-        },
-        {
-          icon: 'bar-chart-3',
-          title: 'Management',
-          text: 'Managers tracking sentiment and team productivity in real time.',
-          tag: 'Real-time team visibility',
-        },
-      ],
     },
     faq: {
       label: 'FAQ',

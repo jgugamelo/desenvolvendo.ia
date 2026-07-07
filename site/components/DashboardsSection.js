@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Reveal from './Reveal';
 import Icon from './Icon';
+import Chapter from './Chapter';
 import { trackEvent } from '@/lib/i18n';
 
 const WEEK_BARS = [38, 52, 47, 64, 58, 78, 92];
@@ -34,6 +35,7 @@ export default function DashboardsSection({ t }) {
 
   return (
     <section id="dashboards" ref={ref} className="relative z-10 py-20 lg:py-28">
+      <Chapter n="05" />
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           {/* Dashboard mockup */}

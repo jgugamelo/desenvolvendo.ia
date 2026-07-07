@@ -7,7 +7,7 @@ import ParticleCanvas from '@/components/ParticleCanvas';
 import CursorGlow from '@/components/CursorGlow';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import { Problem, Solution, Products, Who, How, Plans, Cases, FinalCta } from '@/components/Sections';
+import { Problem, Products, Niches, How, Plans, FinalCta } from '@/components/Sections';
 import Toolkit from '@/components/Toolkit';
 import SentimentDemo from '@/components/SentimentDemo';
 import DashboardsSection from '@/components/DashboardsSection';
@@ -43,15 +43,13 @@ export default function Page() {
       <Header t={t} lang={lang} setLang={setLang} />
       <Hero t={t} />
       <Problem t={t} />
-      <Solution t={t} />
       <Products t={t} />
       <SentimentDemo t={t} />
       <Toolkit t={t} />
       <DashboardsSection t={t} />
-      <Who t={t} />
+      <Niches t={t} />
       <How t={t} />
       <Plans t={t} />
-      <Cases t={t} />
       <Faq t={t} />
       <FinalCta t={t} lang={lang} />
       <LeadForm t={t} lang={lang} />

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Reveal from './Reveal';
 import Icon from './Icon';
+import Chapter from './Chapter';
 import { trackEvent } from '@/lib/i18n';
 
 const SENTIMENT_STYLE = {
@@ -74,7 +75,8 @@ export default function SentimentDemo({ t }) {
   const showRecovered = visibleCount >= 5;
 
   return (
-    <section id="sentimento" ref={sectionRef} className="section-contrast relative z-10 border-y border-white/5 py-20 lg:py-28">
+    <section id="sentimento" ref={sectionRef} className="relative z-10 py-20 lg:py-28">
+      <Chapter n="03" />
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           {/* Copy */}

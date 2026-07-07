@@ -3,6 +3,7 @@
 import Reveal from './Reveal';
 import Icon from './Icon';
 import SpotlightCard from './SpotlightCard';
+import Chapter from './Chapter';
 import { WHATSAPP_NUMBER, trackEvent } from '@/lib/i18n';
 
 /**
@@ -25,6 +26,7 @@ export default function Toolkit({ t }) {
     >
       {/* faixa de destaque: brilho superior */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-ai/60 to-transparent" />
+      <Chapter n="04" />
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <Reveal>
           <div className="gborder shadow-[0_0_80px_-20px_rgba(46,124,246,0.45)]">
