@@ -45,8 +45,8 @@ export default function Page() {
       <Problem t={t} />
       <Solution t={t} />
       <Products t={t} />
-      <Toolkit t={t} />
       <SentimentDemo t={t} />
+      <Toolkit t={t} />
       <DashboardsSection t={t} />
       <Who t={t} />
       <How t={t} />

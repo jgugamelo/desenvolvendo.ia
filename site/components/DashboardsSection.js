@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Reveal from './Reveal';
+import Icon from './Icon';
 import { trackEvent } from '@/lib/i18n';
 
 const WEEK_BARS = [38, 52, 47, 64, 58, 78, 92];
@@ -130,6 +131,13 @@ export default function DashboardsSection({ t }) {
                 </span>
               ))}
             </div>
+            <a
+              href="#diagnostico"
+              className="btn-primary mt-9"
+              onClick={() => trackEvent('click_cta_diagnostico', { placement: 'dashboards' })}
+            >
+              {t.dashboards.cta} <Icon name="arrow-right" className="h-4 w-4" />
+            </a>
           </Reveal>
         </div>
       </div>

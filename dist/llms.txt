@@ -12,7 +12,7 @@ Idiomas: Português (Brasil) e Inglês
 - **SDR.IA**: agente comercial de IA para qualificação, follow-up, recuperação de leads e agendamento automático.
 - **Sentimento.IA**: análise de sentimento em tempo real nas conversas (WhatsApp e outros canais), com alertas de risco de perda de lead, sugestões de abordagem e relatórios de qualidade por atendente — nosso diferencial proprietário.
 - **Dashboards.IA**: painéis comerciais, operacionais, financeiros e de atendimento criados com IA.
-- **Automações Inteligentes**: integrações entre WhatsApp, CRM, planilhas, formulários, e-mail, APIs e sistemas (n8n e afins).
+- **Automações Inteligentes**: automações desenvolvidas por código integrando WhatsApp, CRM, planilhas, formulários, e-mail, APIs e sistemas internos.
 - **Operação Inteligente 360**: projeto completo com CRM, IA, sentimento, dashboards, automações e suporte contínuo.
 - **Projetos sob medida**: desenvolvimento personalizado de ponta a ponta envolvendo IA, dados e automação.
 

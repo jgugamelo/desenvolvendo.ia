@@ -15,7 +15,16 @@ export default function Toolkit({ t }) {
   const waHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(k.whatsappMsg)}`;
 
   return (
-    <section id="kit-ia" className="relative z-10 py-20 lg:py-28">
+    <section
+      id="kit-ia"
+      className="relative z-10 border-y border-accent/20 py-20 lg:py-28"
+      style={{
+        background:
+          'linear-gradient(180deg, rgba(18,38,78,0.55) 0%, rgba(12,27,58,0.35) 50%, rgba(5,11,24,0) 100%)',
+      }}
+    >
+      {/* faixa de destaque: brilho superior */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-ai/60 to-transparent" />
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <Reveal>
           <div className="gborder shadow-[0_0_80px_-20px_rgba(46,124,246,0.45)]">

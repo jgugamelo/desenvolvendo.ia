@@ -76,7 +76,6 @@ export const translations = {
         'WhatsApp',
         'CRM',
         'Google Sheets',
-        'n8n',
         'E-mail',
         'APIs',
         'Formulários',
@@ -85,7 +84,9 @@ export const translations = {
         'Google Calendar',
         'Excel',
         'Webhooks',
+        'Sistemas internos',
       ],
+      cta: 'Automatizar minha operação',
     },
     products: {
       label: 'Produtos e serviços',
@@ -219,6 +220,7 @@ export const translations = {
       ],
       chartLabel: 'Leads por semana',
       sentimentByAgent: 'Sentimento por atendente',
+      cta: 'Quero ter essa previsibilidade',
     },
     who: {
       label: 'Para quem é',
@@ -467,7 +469,6 @@ export const translations = {
         'WhatsApp',
         'CRM',
         'Google Sheets',
-        'n8n',
         'Email',
         'APIs',
         'Forms',
@@ -476,7 +477,9 @@ export const translations = {
         'Google Calendar',
         'Excel',
         'Webhooks',
+        'Internal systems',
       ],
+      cta: 'Automate my operation',
     },
     products: {
       label: 'Products & services',
@@ -610,6 +613,7 @@ export const translations = {
       ],
       chartLabel: 'Leads per week',
       sentimentByAgent: 'Sentiment per rep',
+      cta: 'I want this predictability',
     },
     who: {
       label: 'Who it’s for',

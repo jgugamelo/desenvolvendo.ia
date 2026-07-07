@@ -110,6 +110,15 @@ export function Solution({ t }) {
               ))}
             </div>
           </div>
+          <div className="mt-9 text-center">
+            <a
+              href="#diagnostico"
+              className="btn-ghost"
+              onClick={() => trackEvent('click_cta_diagnostico', { placement: 'automations' })}
+            >
+              {t.solution.cta} <Icon name="arrow-right" className="h-4 w-4" />
+            </a>
+          </div>
         </Reveal>
       </div>
     </section>
