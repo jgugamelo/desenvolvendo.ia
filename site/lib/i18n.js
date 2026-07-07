@@ -6,6 +6,7 @@ export const translations = {
       who: 'Para Quem É',
       diagnosis: 'Diagnóstico',
       contact: 'Contato',
+      kit: 'Kit IA',
       cta: 'Solicitar diagnóstico',
     },
     hero: {
@@ -128,6 +129,55 @@ export const translations = {
           text: 'Projeto completo com CRM, IA, sentimento, dashboards, automações e suporte contínuo.',
         },
       ],
+    },
+    toolkit: {
+      label: 'Kit Super Ferramentas de IA',
+      title: 'Todas as ferramentas de IA da sua operação em uma assinatura',
+      subtitle:
+        'Um pacote completo, pronto para usar: CRM inteligente, WhatsApp com IA, disparos, criação de imagens e dashboards — tudo integrado, por um valor mensal fixo.',
+      features: [
+        {
+          icon: 'messages-square',
+          title: 'CRM + Gestor de WhatsApp com IA',
+          text: 'Gestão completa das conversas com IA integrada e análise de sentimento em tempo real.',
+        },
+        {
+          icon: 'heart-pulse',
+          title: 'Análise de sentimento ao vivo',
+          text: 'Cada conversa monitorada, com alertas e orientação para a equipe.',
+        },
+        {
+          icon: 'phone',
+          title: 'Ligações por WhatsApp',
+          text: 'Chamadas de voz direto da plataforma, registradas no CRM.',
+        },
+        {
+          icon: 'send',
+          title: 'Disparador com IA',
+          text: 'Campanhas e follow-ups em massa com mensagens personalizadas por IA.',
+        },
+        {
+          icon: 'image',
+          title: 'Creator de imagens',
+          text: 'Geração de imagens com IA para posts, anúncios e campanhas.',
+        },
+        {
+          icon: 'bar-chart-3',
+          title: 'Criador de dashboards com IA',
+          text: 'Monte painéis gerenciais conversando com a IA, sem depender de TI.',
+        },
+      ],
+      priceLabel: 'Assinatura mensal',
+      priceMonthly: 'R$ 890',
+      perMonth: '/mês',
+      orLabel: 'ou no plano anual',
+      priceAnnual: 'R$ 690',
+      annualNote: 'por mês no pagamento anual no cartão',
+      savings: 'Economia de R$ 2.400 por ano',
+      includes: 'Tudo incluso, sem custo por usuário adicional de IA',
+      cta: 'Quero assinar o Kit',
+      ctaSecondary: 'Tirar dúvidas no WhatsApp',
+      whatsappMsg: 'Olá! Tenho interesse no Kit Super Ferramentas de IA.',
     },
     sentiment: {
       label: 'Diferencial proprietário',
@@ -315,6 +365,7 @@ export const translations = {
       who: 'Who It’s For',
       diagnosis: 'AI Diagnosis',
       contact: 'Contact',
+      kit: 'AI Toolkit',
       cta: 'Request AI diagnosis',
     },
     hero: {
@@ -437,6 +488,55 @@ export const translations = {
           text: 'Full project: CRM, AI, sentiment, dashboards, automations and ongoing support.',
         },
       ],
+    },
+    toolkit: {
+      label: 'AI Super Tools Kit',
+      title: 'Every AI tool your operation needs, in one subscription',
+      subtitle:
+        'A complete, ready-to-use package: smart CRM, AI-powered WhatsApp, bulk messaging, image creation and dashboards — fully integrated, for one fixed monthly price.',
+      features: [
+        {
+          icon: 'messages-square',
+          title: 'CRM + AI WhatsApp Manager',
+          text: 'Full conversation management with built-in AI and real-time sentiment analysis.',
+        },
+        {
+          icon: 'heart-pulse',
+          title: 'Live sentiment analysis',
+          text: 'Every conversation monitored, with alerts and coaching for your team.',
+        },
+        {
+          icon: 'phone',
+          title: 'WhatsApp voice calls',
+          text: 'Voice calls straight from the platform, logged in the CRM.',
+        },
+        {
+          icon: 'send',
+          title: 'AI campaign sender',
+          text: 'Bulk campaigns and follow-ups with AI-personalized messages.',
+        },
+        {
+          icon: 'image',
+          title: 'Image creator',
+          text: 'AI image generation for posts, ads and campaigns.',
+        },
+        {
+          icon: 'bar-chart-3',
+          title: 'AI dashboard builder',
+          text: 'Build executive dashboards by talking to the AI — no IT needed.',
+        },
+      ],
+      priceLabel: 'Monthly subscription',
+      priceMonthly: 'R$ 890',
+      perMonth: '/mo',
+      orLabel: 'or on the annual plan',
+      priceAnnual: 'R$ 690',
+      annualNote: 'per month, paid annually by card',
+      savings: 'Save R$ 2,400 per year',
+      includes: 'Everything included — no extra per-user AI fees',
+      cta: 'Subscribe to the Kit',
+      ctaSecondary: 'Ask us on WhatsApp',
+      whatsappMsg: 'Hi! I’m interested in the AI Super Tools Kit.',
     },
     sentiment: {
       label: 'Proprietary differentiator',

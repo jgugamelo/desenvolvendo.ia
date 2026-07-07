@@ -35,6 +35,10 @@ import {
   CheckCircle2,
   ArrowRight,
   Sparkles,
+  Phone,
+  Send,
+  Image as ImageIcon,
+  Crown,
 } from 'lucide-react';
 
 const ICONS = {
@@ -72,6 +76,10 @@ const ICONS = {
   'check-circle': CheckCircle2,
   'arrow-right': ArrowRight,
   sparkles: Sparkles,
+  phone: Phone,
+  send: Send,
+  image: ImageIcon,
+  crown: Crown,
 };
 
 /** Renders a lucide icon by name with consistent stroke weight. */

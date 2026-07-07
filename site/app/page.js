@@ -8,6 +8,7 @@ import CursorGlow from '@/components/CursorGlow';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import { Problem, Solution, Products, Who, How, Plans, Cases, FinalCta } from '@/components/Sections';
+import Toolkit from '@/components/Toolkit';
 import SentimentDemo from '@/components/SentimentDemo';
 import DashboardsSection from '@/components/DashboardsSection';
 import LeadForm from '@/components/LeadForm';
@@ -43,6 +44,7 @@ export default function Page() {
       <Problem t={t} />
       <Solution t={t} />
       <Products t={t} />
+      <Toolkit t={t} />
       <SentimentDemo t={t} />
       <DashboardsSection t={t} />
       <Who t={t} />
