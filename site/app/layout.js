@@ -62,7 +62,7 @@ export const metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'desenvolvendo.ia — IA para vender mais, atender melhor e gerenciar com previsibilidade',
+        alt: 'desenvolvendo.ia | IA para vender mais, atender melhor e gerenciar com previsibilidade',
       },
     ],
   },
@@ -86,7 +86,7 @@ const jsonLd = [
     logo: `${SITE_URL}/icon-512.png`,
     description:
       'Agência de inteligência artificial aplicada a vendas, atendimento e gestão: agentes de IA, análise de sentimento em tempo real, automações e dashboards gerenciais.',
-    email: 'contato@desenvolvendo.ia',
+    email: 'contato@desenvolvendo.ia.br',
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+55-21-98678-0204',
@@ -138,7 +138,7 @@ const jsonLd = [
         name: 'Quanto custa implantar IA na minha empresa?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'O Kit Super Ferramentas de IA custa R$ 890/mês, ou R$ 690/mês no plano anual no cartão. Projetos personalizados variam conforme o escopo — o diagnóstico gratuito indica o investimento ideal para a sua operação.',
+          text: 'O Kit Super Ferramentas de IA custa R$ 890/mês, ou R$ 690/mês no plano anual no cartão. Projetos personalizados variam conforme o escopo. O diagnóstico gratuito indica o investimento ideal para a sua operação.',
         },
       },
       {
@@ -146,7 +146,7 @@ const jsonLd = [
         name: 'O que está incluído no Kit Super Ferramentas de IA?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'CRM com gestor de WhatsApp com IA integrada e análise de sentimento em tempo real, ligações por WhatsApp, disparador com IA, creator para geração de imagens e criador de dashboards com IA — tudo em uma única assinatura.',
+          text: 'CRM com gestor de WhatsApp com IA integrada e análise de sentimento em tempo real, ligações por WhatsApp, disparador com IA, creator para geração de imagens e criador de dashboards com IA, tudo em uma única assinatura.',
         },
       },
       {

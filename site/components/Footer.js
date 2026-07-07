@@ -67,8 +67,8 @@ export default function Footer({ t, lang, setLang }) {
                 </a>
               </li>
               <li>
-                <a href="mailto:contato@desenvolvendo.ia" className="transition-colors hover:text-ai">
-                  contato@desenvolvendo.ia
+                <a href="mailto:contato@desenvolvendo.ia.br" className="transition-colors hover:text-ai">
+                  contato@desenvolvendo.ia.br
                 </a>
               </li>
             </ul>

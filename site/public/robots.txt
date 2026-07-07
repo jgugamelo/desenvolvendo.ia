@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# Crawlers de IA — conteúdo liberado para indexação e respostas
+# Crawlers de IA: conteúdo liberado para indexação e respostas
 User-agent: GPTBot
 Allow: /
 

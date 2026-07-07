@@ -44,7 +44,7 @@ export const translations = {
       label: 'Soluções',
       title: 'Um sistema completo, não um chatbot genérico',
       subtitle:
-        'Cada entrega é desenhada sob medida para a sua operação — nada de pacotes prontos.',
+        'Cada entrega é desenhada sob medida para a sua operação, nada de pacotes prontos.',
       integrationsLabel: 'Conectamos com o que você já usa',
       integrations: [
         'WhatsApp',
@@ -95,7 +95,7 @@ export const translations = {
       label: 'Kit Super Ferramentas de IA',
       title: 'Todas as ferramentas de IA da sua operação em uma assinatura',
       subtitle:
-        'CRM, WhatsApp com IA, disparos, imagens e dashboards — integrados, por um valor mensal fixo.',
+        'CRM, WhatsApp com IA, disparos, imagens e dashboards integrados, por um valor mensal fixo.',
       features: [
         { icon: 'messages-square', title: 'CRM + WhatsApp com IA', text: 'Conversas gerenciadas com IA e sentimento ao vivo.' },
         { icon: 'heart-pulse', title: 'Sentimento em tempo real', text: 'Alertas e orientação ao vivo para a equipe.' },
@@ -139,7 +139,7 @@ export const translations = {
       alertTitle: 'Sentimento.IA',
       alertRisk: 'Risco de perda detectado',
       alertSuggestion: 'Sugestão: apresente a condição promocional e reforce o valor do resultado.',
-      alertRecovered: 'Lead recuperado — sentimento positivo',
+      alertRecovered: 'Lead recuperado: sentimento positivo',
       sentimentLabels: { positive: 'Positivo', neutral: 'Neutro', negative: 'Negativo' },
     },
     dashboards: {
@@ -246,15 +246,15 @@ export const translations = {
         },
         {
           q: 'Quanto custa implantar IA na minha empresa?',
-          a: 'O Kit Super Ferramentas de IA custa R$ 890/mês, ou R$ 690/mês no plano anual no cartão. Projetos personalizados variam conforme o escopo — o diagnóstico gratuito indica o investimento ideal para a sua operação.',
+          a: 'O Kit Super Ferramentas de IA custa R$ 890/mês, ou R$ 690/mês no plano anual no cartão. Projetos personalizados variam conforme o escopo. O diagnóstico gratuito indica o investimento ideal para a sua operação.',
         },
         {
           q: 'O que está incluído no Kit Super Ferramentas de IA?',
-          a: 'CRM com gestor de WhatsApp com IA integrada e análise de sentimento em tempo real, ligações por WhatsApp, disparador com IA, creator para geração de imagens e criador de dashboards com IA — tudo em uma única assinatura.',
+          a: 'CRM com gestor de WhatsApp com IA integrada e análise de sentimento em tempo real, ligações por WhatsApp, disparador com IA, creator para geração de imagens e criador de dashboards com IA, tudo em uma única assinatura.',
         },
         {
           q: 'A IA substitui minha equipe de atendimento?',
-          a: 'Não. A IA assume tarefas repetitivas como triagem, dúvidas frequentes e follow-up, e orienta sua equipe com análise de sentimento e sugestões em tempo real. Sua equipe foca no que exige julgamento humano — e atende mais e melhor.',
+          a: 'Não. A IA assume tarefas repetitivas como triagem, dúvidas frequentes e follow-up, e orienta sua equipe com análise de sentimento e sugestões em tempo real. Sua equipe foca no que exige julgamento humano e atende mais e melhor.',
         },
         {
           q: 'O que é análise de sentimento em tempo real?',
@@ -362,9 +362,9 @@ export const translations = {
     },
     products: {
       label: 'Solutions',
-      title: 'A complete system — not a generic chatbot',
+      title: 'A complete system, not a generic chatbot',
       subtitle:
-        'Every delivery is custom-built around your operation — no off-the-shelf packages.',
+        'Every delivery is custom-built around your operation, no off-the-shelf packages.',
       integrationsLabel: 'We connect with what you already use',
       integrations: [
         'WhatsApp',
@@ -387,7 +387,7 @@ export const translations = {
           { from: 'client', text: 'Hi! Do you have any openings tomorrow afternoon?' },
           { from: 'ai', text: 'Hello! We do 😊 I have 2pm or 4pm available. Which works best?' },
           { from: 'client', text: '4pm works' },
-          { from: 'ai', text: 'Perfect — booked for tomorrow at 4pm! Confirmation just sent 📅' },
+          { from: 'ai', text: 'Perfect! Booked for tomorrow at 4pm. Confirmation just sent 📅' },
         ],
         aiBadge: 'AI',
         steps: [
@@ -415,7 +415,7 @@ export const translations = {
       label: 'AI Super Tools Kit',
       title: 'Every AI tool your operation needs, in one subscription',
       subtitle:
-        'CRM, AI-powered WhatsApp, bulk messaging, images and dashboards — integrated, for one fixed monthly price.',
+        'CRM, AI-powered WhatsApp, bulk messaging, images and dashboards integrated, for one fixed monthly price.',
       features: [
         { icon: 'messages-square', title: 'CRM + AI WhatsApp Manager', text: 'Conversations managed with AI and live sentiment.' },
         { icon: 'heart-pulse', title: 'Live sentiment analysis', text: 'Real-time alerts and coaching for your team.' },
@@ -431,7 +431,7 @@ export const translations = {
       priceAnnual: '$197',
       annualNote: 'per month, paid annually by card',
       savings: 'Save $624 per year',
-      includes: 'Everything included — no extra per-user AI fees',
+      includes: 'Everything included, no extra per-user AI fees',
       cta: 'Subscribe to the Kit',
       ctaSecondary: 'Ask us on WhatsApp',
       whatsappMsg: 'Hi! I’m interested in the AI Super Tools Kit.',
@@ -459,7 +459,7 @@ export const translations = {
       alertTitle: 'Sentiment.AI',
       alertRisk: 'Lead-loss risk detected',
       alertSuggestion: 'Suggestion: present the promotional offer and reinforce the value of the outcome.',
-      alertRecovered: 'Lead recovered — positive sentiment',
+      alertRecovered: 'Lead recovered: positive sentiment',
       sentimentLabels: { positive: 'Positive', neutral: 'Neutral', negative: 'Negative' },
     },
     dashboards: {
@@ -566,11 +566,11 @@ export const translations = {
         },
         {
           q: 'How much does it cost to bring AI into my business?',
-          a: 'The AI Super Tools Kit costs $249/mo, or $197/mo on the annual card plan. Custom projects vary by scope — a free diagnosis points to the ideal investment for your operation.',
+          a: 'The AI Super Tools Kit costs $249/mo, or $197/mo on the annual card plan. Custom projects vary by scope. A free diagnosis points to the ideal investment for your operation.',
         },
         {
           q: 'What is included in the AI Super Tools Kit?',
-          a: 'CRM with an AI-powered WhatsApp manager and real-time sentiment analysis, WhatsApp voice calls, AI campaign sender, image creator and AI dashboard builder — all in a single subscription.',
+          a: 'CRM with an AI-powered WhatsApp manager and real-time sentiment analysis, WhatsApp voice calls, AI campaign sender, image creator and AI dashboard builder, all in a single subscription.',
         },
         {
           q: 'Does AI replace my support team?',
