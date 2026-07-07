@@ -6,14 +6,14 @@
  * star particles. Pure SVG/CSS — crisp at any size (sized in em).
  */
 const SPARKLES = [
-  { cx: 88, cy: 7, r: 1.4, d: '0s' },
-  { cx: 78, cy: 4, r: 1.0, d: '0.5s' },
-  { cx: 68, cy: 5, r: 1.6, d: '1.1s' },
-  { cx: 58, cy: 9, r: 0.9, d: '0.3s' },
-  { cx: 49, cy: 14, r: 1.2, d: '1.6s' },
-  { cx: 42, cy: 21, r: 0.8, d: '0.8s' },
-  { cx: 82, cy: 12, r: 0.7, d: '1.9s' },
-  { cx: 63, cy: 13, r: 0.7, d: '2.3s' },
+  { cx: 92, cy: 5, r: 1.4, d: '0s' },
+  { cx: 84, cy: 3, r: 1.0, d: '0.5s' },
+  { cx: 76, cy: 4, r: 1.6, d: '1.1s' },
+  { cx: 69, cy: 8, r: 0.9, d: '0.3s' },
+  { cx: 63, cy: 15, r: 1.2, d: '1.6s' },
+  { cx: 60, cy: 22, r: 0.8, d: '0.8s' },
+  { cx: 88, cy: 10, r: 0.7, d: '1.9s' },
+  { cx: 70, cy: 13, r: 0.7, d: '2.3s' },
 ];
 
 export default function Logo({ className = '' }) {
@@ -43,7 +43,7 @@ export default function Logo({ className = '' }) {
           {/* trail */}
           <path
             id="cometPath"
-            d="M96 6 C 72 0, 46 8, 36 36"
+            d="M96 5 C 76 -1, 60 9, 58 33"
             fill="none"
             stroke="url(#cometGrad)"
             strokeWidth="2.4"
@@ -65,8 +65,8 @@ export default function Logo({ className = '' }) {
             />
           </circle>
 
-          {/* landing glow at the end of the arc */}
-          <circle cx="36" cy="36" r="4.5" fill="#22d3aa" className="comet-glow" />
+          {/* landing glow on the dot of the "i" */}
+          <circle cx="58" cy="33" r="4.5" fill="#22d3aa" className="comet-glow" />
 
           {/* twinkling star dust */}
           {SPARKLES.map((s, i) => (

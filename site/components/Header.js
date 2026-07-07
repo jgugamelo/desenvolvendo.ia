@@ -36,7 +36,7 @@ export default function Header({ t, lang, setLang }) {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#home" aria-label="desenvolvendo.ia">
-          <Logo className="text-xl" />
+          <Logo className="text-2xl" />
         </a>
 
         <nav className="hidden items-center gap-7 lg:flex">

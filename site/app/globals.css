@@ -193,12 +193,12 @@ html {
 
 /* ---------- animated logo (comet + sparkles) ---------- */
 .comet-trail {
-  stroke-dasharray: 95;
+  stroke-dasharray: 70;
   filter: drop-shadow(0 0 3px rgba(34, 211, 170, 0.7));
   animation: cometTrail 4.5s ease-in-out infinite;
 }
 @keyframes cometTrail {
-  0% { stroke-dashoffset: 95; opacity: 0; }
+  0% { stroke-dashoffset: 70; opacity: 0; }
   10% { opacity: 1; }
   45% { stroke-dashoffset: 0; opacity: 1; }
   70% { stroke-dashoffset: 0; opacity: 0.55; }
