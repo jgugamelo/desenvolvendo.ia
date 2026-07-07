@@ -52,7 +52,7 @@ export default function LeadForm({ t, lang }) {
   }
 
   return (
-    <section id="diagnostico" className="relative z-10 border-t border-white/5 bg-ink-900/40 py-20 lg:py-28">
+    <section id="diagnostico" className="section-contrast relative z-10 border-t border-white/5 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2">
           <Reveal>

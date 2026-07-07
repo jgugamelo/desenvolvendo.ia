@@ -93,6 +93,22 @@ export const translations = {
       title: 'Soluções para cada etapa da sua operação',
       subtitle:
         'Estas são as nossas frentes de atuação — cada entrega é personalizada para o seu processo, seus canais e suas metas.',
+      demo: {
+        title: 'IA em ação · WhatsApp',
+        messages: [
+          { from: 'client', text: 'Oi! Vocês têm horário amanhã à tarde?' },
+          { from: 'ai', text: 'Olá! Temos sim 😊 Tenho 14h ou 16h disponíveis. Qual prefere?' },
+          { from: 'client', text: 'Pode ser 16h' },
+          { from: 'ai', text: 'Perfeito, agendado para amanhã às 16h! Acabei de enviar a confirmação 📅' },
+        ],
+        aiBadge: 'IA',
+        steps: [
+          'Triagem automática',
+          'Agendamento sem intervenção humana',
+          'Lead registrado no CRM',
+          'Follow-up programado',
+        ],
+      },
       custom: {
         title: 'Precisa de algo que não está aqui?',
         text: 'Desenvolvemos projetos personalizados de ponta a ponta: do diagnóstico ao desenho da solução, integração com os sistemas que você já usa e evolução contínua. Se envolve IA, dados ou automação, nós construímos.',
@@ -486,6 +502,22 @@ export const translations = {
       title: 'Solutions for every stage of your operation',
       subtitle:
         'These are our core practice areas — every delivery is tailored to your process, your channels and your goals.',
+      demo: {
+        title: 'AI in action · Chat',
+        messages: [
+          { from: 'client', text: 'Hi! Do you have any openings tomorrow afternoon?' },
+          { from: 'ai', text: 'Hello! We do 😊 I have 2pm or 4pm available. Which works best?' },
+          { from: 'client', text: '4pm works' },
+          { from: 'ai', text: 'Perfect — booked for tomorrow at 4pm! Confirmation just sent 📅' },
+        ],
+        aiBadge: 'AI',
+        steps: [
+          'Automatic triage',
+          'Human-free scheduling',
+          'Lead logged in the CRM',
+          'Follow-up scheduled',
+        ],
+      },
       custom: {
         title: 'Need something that isn’t listed here?',
         text: 'We build end-to-end custom projects: from diagnosis to solution design, integration with the systems you already use and continuous evolution. If it involves AI, data or automation, we build it.',

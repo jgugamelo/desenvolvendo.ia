@@ -74,7 +74,7 @@ export default function SentimentDemo({ t }) {
   const showRecovered = visibleCount >= 5;
 
   return (
-    <section id="sentimento" ref={sectionRef} className="relative z-10 border-y border-white/5 bg-ink-900/40 py-20 lg:py-28">
+    <section id="sentimento" ref={sectionRef} className="section-contrast relative z-10 border-y border-white/5 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           {/* Copy */}

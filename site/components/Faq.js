@@ -9,7 +9,7 @@ import Icon from './Icon';
  */
 export default function Faq({ t }) {
   return (
-    <section id="faq" className="relative z-10 border-y border-white/5 bg-ink-900/40 py-20 lg:py-28">
+    <section id="faq" className="section-contrast relative z-10 border-y border-white/5 py-20 lg:py-28">
       <div className="mx-auto max-w-4xl px-5 lg:px-8">
         <Reveal className="text-center">
           <span className="section-label">{t.faq.label}</span>

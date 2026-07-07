@@ -3,6 +3,7 @@
 import Reveal from './Reveal';
 import Icon from './Icon';
 import SpotlightCard from './SpotlightCard';
+import ProductsDemo from './ProductsDemo';
 import { trackEvent, whatsappLink } from '@/lib/i18n';
 
 /* ----------------------------------------------------------------
@@ -55,7 +56,7 @@ export function Problem({ t }) {
 ----------------------------------------------------------------- */
 export function Solution({ t }) {
   return (
-    <section className="relative z-10 overflow-hidden border-y border-white/5 bg-ink-900/40 py-20 lg:py-28">
+    <section className="relative z-10 overflow-hidden section-contrast border-y border-white/5 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <Reveal className="mx-auto max-w-3xl text-center">
           <span className="section-label">{t.solution.label}</span>
@@ -140,26 +141,35 @@ export function Products({ t }) {
           </h2>
           <p className="mt-4 max-w-2xl text-lg text-slate-400">{t.products.subtitle}</p>
         </Reveal>
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {t.products.items.map((p, i) => (
-            <Reveal key={p.name} delay={(i % 3) + 1}>
-              <SpotlightCard className="glass group h-full rounded-2xl p-7 transition-colors duration-300 hover:border-ai/30">
-                {/* accent bar */}
-                <div className="h-1 w-10 rounded-full bg-gradient-to-r from-accent to-ai transition-all duration-500 group-hover:w-full" />
-                <div className="mt-6 flex items-center justify-between">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-ai/20 text-ai transition-transform duration-300 group-hover:scale-110">
-                    <Icon name={p.icon} className="h-6 w-6" />
+        <div className="mt-12 grid gap-8 lg:grid-cols-[1.55fr,1fr]">
+          <div className="grid gap-5 sm:grid-cols-2">
+            {t.products.items.map((p, i) => (
+              <Reveal key={p.name} delay={(i % 2) + 1}>
+                <SpotlightCard className="glass group h-full rounded-2xl p-6 transition-colors duration-300 hover:border-ai/30">
+                  {/* accent bar */}
+                  <div className="h-1 w-10 rounded-full bg-gradient-to-r from-accent to-ai transition-all duration-500 group-hover:w-full" />
+                  <div className="mt-5 flex items-center justify-between">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-ai/20 text-ai transition-transform duration-300 group-hover:scale-110">
+                      <Icon name={p.icon} className="h-5 w-5" />
+                    </div>
+                    <Icon
+                      name="arrow-right"
+                      className="h-5 w-5 -translate-x-2 text-ai opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                    />
                   </div>
-                  <Icon
-                    name="arrow-right"
-                    className="h-5 w-5 -translate-x-2 text-ai opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-                  />
-                </div>
-                <h3 className="mt-4 font-display text-xl font-semibold text-white">{p.name}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-400">{p.text}</p>
-              </SpotlightCard>
-            </Reveal>
-          ))}
+                  <h3 className="mt-3.5 font-display text-lg font-semibold text-white">{p.name}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-400">{p.text}</p>
+                </SpotlightCard>
+              </Reveal>
+            ))}
+          </div>
+
+          {/* live demo: AI qualifying a lead */}
+          <Reveal delay={2}>
+            <div className="lg:sticky lg:top-28">
+              <ProductsDemo t={t} />
+            </div>
+          </Reveal>
         </div>
 
         {/* custom projects banner */}
@@ -198,7 +208,7 @@ export function Products({ t }) {
 ----------------------------------------------------------------- */
 export function Who({ t }) {
   return (
-    <section id="para-quem" className="relative z-10 border-y border-white/5 bg-ink-900/40 py-20 lg:py-28">
+    <section id="para-quem" className="relative z-10 section-contrast border-y border-white/5 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <Reveal>
           <span className="section-label">{t.who.label}</span>
@@ -291,7 +301,7 @@ export function How({ t }) {
 ----------------------------------------------------------------- */
 export function Plans({ t }) {
   return (
-    <section className="relative z-10 border-y border-white/5 bg-ink-900/40 py-20 lg:py-28">
+    <section className="relative z-10 section-contrast border-y border-white/5 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <Reveal className="text-center">
           <span className="section-label">{t.plans.label}</span>
