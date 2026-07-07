@@ -778,7 +778,7 @@ export const translations = {
   },
 };
 
-export const WHATSAPP_NUMBER = '5521999473307';
+export const WHATSAPP_NUMBER = '5521986780204';
 
 export function whatsappLink(lang) {
   const msg =

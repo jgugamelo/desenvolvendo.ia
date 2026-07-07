@@ -89,7 +89,7 @@ const jsonLd = [
     email: 'contato@desenvolvendo.ia',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+55-21-99947-3307',
+      telephone: '+55-21-98678-0204',
       contactType: 'sales',
       availableLanguage: ['Portuguese', 'English'],
     },

@@ -63,7 +63,7 @@ export default function Footer({ t, lang, setLang }) {
                   onClick={() => trackEvent('click_whatsapp', { placement: 'footer' })}
                   className="transition-colors hover:text-ai"
                 >
-                  WhatsApp: +55 21 99947-3307
+                  WhatsApp: +55 21 98678-0204
                 </a>
               </li>
               <li>

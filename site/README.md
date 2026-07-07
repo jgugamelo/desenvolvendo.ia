@@ -69,7 +69,7 @@ Importante: envie os arquivos gerados em `out`, nunca os arquivos-fonte (app/, c
 - Bilíngue PT/EN com seletor no header/footer (a versão EN é adaptada para o mercado americano, não tradução literal).
 - Fundo de partículas interativo que reage ao mouse + glow que segue o cursor + tilt 3D no mockup do hero (referência: talonintelligence.com.br).
 - Animações de scroll (reveal) em todas as seções.
-- Botão flutuante de WhatsApp (+55 21 99947-3307) com mensagem pré-preenchida por idioma.
+- Botão flutuante de WhatsApp (+55 21 98678-0204) com mensagem pré-preenchida por idioma.
 - Formulário de lead com validação, captura de UTM e tela de confirmação.
 - Eventos de analytics do PRD disparados via `window.dataLayer` (prontos para o Google Tag Manager): `click_cta_hero`, `click_cta_diagnostico`, `click_whatsapp`, `submit_lead_form`, `select_language_pt/en`, `view_sentimento_section`, `view_dashboards_section`.
 - SEO básico: metadados, Open Graph e keywords em `app/layout.js`.
