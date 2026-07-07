@@ -789,8 +789,13 @@ export function whatsappLink(lang) {
 }
 
 export function trackEvent(event, params = {}) {
-  if (typeof window !== 'undefined') {
-    window.dataLayer = window.dataLayer || [];
+  if (typeof window === 'undefined') return;
+  window.dataLayer = window.dataLayer || [];
+  if (typeof window.gtag === 'function') {
+    // envia como evento GA4
+    window.gtag('event', event, params);
+  } else {
+    // fallback compatível com GTM
     window.dataLayer.push({ event, ...params });
   }
 }
