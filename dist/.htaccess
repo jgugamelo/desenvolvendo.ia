@@ -7,6 +7,7 @@ RedirectMatch 404 ^/site(/|$)
 RedirectMatch 404 ^/\.git(/|$)
 RedirectMatch 404 ^/\.gitignore$
 RedirectMatch 404 ^/\.cpanel\.yml$
+RedirectMatch 404 ^/leads(/|$)
 RedirectMatch 404 \.(md|docx)$
 
 # Cache para assets com hash no nome

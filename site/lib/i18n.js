@@ -370,11 +370,13 @@ export const translations = {
       pains: ['Atendimento', 'Vendas', 'Follow-up', 'Gestão de equipe', 'Dashboards', 'Automação', 'Outro'],
       message: 'Mensagem (opcional)',
       submit: 'Enviar solicitação',
+      sending: 'Enviando…',
       select: 'Selecione',
       successTitle: 'Solicitação recebida!',
       successText: 'Nossa equipe entrará em contato em breve para agendar seu diagnóstico.',
       whatsapp: 'Ou fale agora pelo WhatsApp',
       required: 'Preencha os campos obrigatórios.',
+      sendError: 'Não foi possível enviar agora. Tente novamente ou chame no WhatsApp.',
     },
     footer: {
       about:
@@ -759,11 +761,13 @@ export const translations = {
       pains: ['Support', 'Sales', 'Follow-up', 'Team management', 'Dashboards', 'Automation', 'Other'],
       message: 'Message (optional)',
       submit: 'Send request',
+      sending: 'Sending…',
       select: 'Select',
       successTitle: 'Request received!',
       successText: 'Our team will contact you shortly to schedule your diagnosis.',
       whatsapp: 'Or message us on WhatsApp now',
       required: 'Please fill in the required fields.',
+      sendError: 'We couldn’t send your request. Please try again or message us on WhatsApp.',
     },
     footer: {
       about:

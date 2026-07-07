@@ -10,9 +10,10 @@ const inputCls =
 
 export default function LeadForm({ t, lang }) {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
   const [error, setError] = useState('');
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(e.target).entries());
 
@@ -30,12 +31,24 @@ export default function LeadForm({ t, lang }) {
 
     const lead = { ...data, ...utm, lang, submittedAt: new Date().toISOString() };
 
-    // V1: front-end only. Plug your n8n/CRM webhook here later:
-    // fetch('https://SEU-WEBHOOK-N8N/webhook/lead', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(lead) });
-    console.log('lead captured', lead);
-
-    trackEvent('submit_lead_form', { country: data.country, pain: data.pain });
-    setSent(true);
+    setSending(true);
+    try {
+      const res = await fetch('/send-lead.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(lead),
+      });
+      const out = await res.json().catch(() => ({ ok: false }));
+      if (res.ok && out.ok) {
+        trackEvent('submit_lead_form', { country: data.country, pain: data.pain });
+        setSent(true);
+      } else {
+        setError(t.form.sendError);
+      }
+    } catch {
+      setError(t.form.sendError);
+    }
+    setSending(false);
   }
 
   return (
@@ -75,6 +88,15 @@ export default function LeadForm({ t, lang }) {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="glass rounded-2xl p-6 lg:p-8" noValidate>
+                {/* honeypot anti-spam: humanos não veem nem preenchem */}
+                <input
+                  type="text"
+                  name="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="absolute -left-[9999px] h-0 w-0 opacity-0"
+                />
                 <div className="grid gap-4 sm:grid-cols-2">
                   <input name="name" placeholder={`${t.form.name} *`} className={inputCls} required />
                   <input name="company" placeholder={t.form.company} className={inputCls} />
@@ -129,8 +151,12 @@ export default function LeadForm({ t, lang }) {
 
                 {error && <p className="mt-3 text-sm font-medium text-red-400">{error}</p>}
 
-                <button type="submit" className="btn-primary mt-5 w-full">
-                  {t.form.submit}
+                <button
+                  type="submit"
+                  disabled={sending}
+                  className="btn-primary mt-5 w-full disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                  {sending ? t.form.sending : t.form.submit}
                 </button>
               </form>
             )}

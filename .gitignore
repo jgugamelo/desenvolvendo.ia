@@ -27,6 +27,8 @@ deploy-hostgator.zip
 /sitemap.xml
 /llms.txt
 /og-image.png
+/send-lead.php
+/leads/
 
 # logs
 *.log
