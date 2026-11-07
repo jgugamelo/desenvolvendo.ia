@@ -7,10 +7,7 @@ import ParticleCanvas from '@/components/ParticleCanvas';
 import CursorGlow from '@/components/CursorGlow';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import { Problem, Products, Niches, How, Plans, FinalCta } from '@/components/Sections';
-import Toolkit from '@/components/Toolkit';
-import SentimentDemo from '@/components/SentimentDemo';
-import DashboardsSection from '@/components/DashboardsSection';
+import { Problem, Pillars, InAction, Examples, How, Engagement, FinalCta } from '@/components/Sections';
 import Faq from '@/components/Faq';
 import LeadForm from '@/components/LeadForm';
 import Footer from '@/components/Footer';
@@ -20,7 +17,6 @@ export default function Page() {
   const [lang, setLang] = useState('pt');
   const t = translations[lang];
 
-  // persist language choice
   useEffect(() => {
     try {
       const saved = window.localStorage.getItem('lang');
@@ -43,13 +39,11 @@ export default function Page() {
       <Header t={t} lang={lang} setLang={setLang} />
       <Hero t={t} />
       <Problem t={t} />
-      <Products t={t} />
-      <SentimentDemo t={t} />
-      <Toolkit t={t} />
-      <DashboardsSection t={t} />
-      <Niches t={t} />
+      <Pillars t={t} />
+      <InAction t={t} />
+      <Examples t={t} />
       <How t={t} />
-      <Plans t={t} />
+      <Engagement t={t} />
       <Faq t={t} />
       <FinalCta t={t} lang={lang} />
       <LeadForm t={t} lang={lang} />

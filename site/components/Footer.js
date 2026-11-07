@@ -9,9 +9,9 @@ export default function Footer({ t, lang, setLang }) {
 
   const links = [
     { href: '#solucoes', label: t.nav.solutions },
+    { href: '#exemplos', label: t.nav.examples },
     { href: '#como-funciona', label: t.nav.how },
-    { href: '#para-quem', label: t.nav.who },
-    { href: '#diagnostico', label: t.nav.diagnosis },
+    { href: '#diagnostico', label: t.nav.cta },
   ];
 
   return (

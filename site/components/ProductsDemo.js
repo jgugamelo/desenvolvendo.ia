@@ -8,8 +8,8 @@ import Icon from './Icon';
  * schedules and hands the lead to the CRM. Progress steps light up as
  * the conversation advances. Replays when scrolled into view.
  */
-export default function ProductsDemo({ t }) {
-  const d = t.products.demo;
+export default function ProductsDemo({ demo }) {
+  const d = demo;
   const [visibleCount, setVisibleCount] = useState(0);
   const [typing, setTyping] = useState(false);
   const ref = useRef(null);

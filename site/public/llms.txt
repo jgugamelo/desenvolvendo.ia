@@ -1,6 +1,6 @@
 # desenvolvendo.ia
 
-> Agência de inteligência artificial aplicada a vendas, atendimento e gestão. Criamos agentes de IA, análise de sentimento em tempo real, automações e dashboards gerenciais para empresas que querem vender mais, atender melhor e decidir com dados.
+> Software que trabalha pela sua operação. Desenvolvemos sistemas personalizados, funcionários digitais (agentes de IA) e soluções de inteligência de dados para empresas que têm uma operação para tocar e não tempo para virar desenvolvedoras.
 
 Site: https://desenvolvendo.ia.br
 Contato: WhatsApp +55 21 98678-0204 · contato@desenvolvendo.ia.br
@@ -8,27 +8,25 @@ Idiomas: Português (Brasil) e Inglês
 
 ## O que fazemos
 
-- **Atendimento.IA**: agentes de IA para atendimento, triagem, dúvidas frequentes e encaminhamento inteligente para equipe humana.
-- **SDR.IA**: agente comercial de IA para qualificação, follow-up, recuperação de leads e agendamento automático.
-- **Sentimento.IA**: análise de sentimento em tempo real nas conversas (WhatsApp e outros canais), com alertas de risco de perda de lead, sugestões de abordagem e relatórios de qualidade por atendente. É o nosso diferencial proprietário.
-- **Dashboards.IA**: painéis comerciais, operacionais, financeiros e de atendimento criados com IA.
-- **Automações Inteligentes**: automações desenvolvidas por código integrando WhatsApp, CRM, planilhas, formulários, e-mail, APIs e sistemas internos.
-- **Operação Inteligente 360**: projeto completo com CRM, IA, sentimento, dashboards, automações e suporte contínuo.
-- **Projetos sob medida**: desenvolvimento personalizado de ponta a ponta envolvendo IA, dados e automação.
+- **Sistemas personalizados**: plataformas internas, portais, painéis e controle de carteiras e processos, integrados às ferramentas que a empresa já usa.
+- **Funcionários digitais**: agentes de IA que executam tarefas completas, como negociar, triar casos, atender, conferir documentos e ler o sentimento das conversas, seguindo as regras da empresa e registrando tudo.
+- **Inteligência de dados**: painéis em tempo real, previsões e alertas por equipe e unidade.
 
-## Kit Super Ferramentas de IA (assinatura)
+## Como entregamos
 
-Pacote completo por assinatura mensal: CRM com gestor de WhatsApp com IA integrada e análise de sentimento em tempo real, ligações por WhatsApp, disparador com IA, creator para geração de imagens e criador de dashboards com IA.
+Partimos de módulos próprios já testados e adaptamos regras, fluxos e integrações a cada cliente: mais rápido e seguro do que desenvolver do zero, mais aderente do que uma ferramenta de prateleira.
 
-- Preço Brasil: R$ 890/mês (mensal) ou R$ 690/mês no plano anual no cartão.
-- Price (international/EN): $249/mo monthly or $197/mo on the annual plan.
+Etapas: diagnóstico, desenho, implantação (com treinamento) e evolução contínua.
 
-## Para quem
+## Formatos de contratação
 
-Educação (escolas, cursos, EAD), clínicas e estética, imobiliárias, advocacia, serviços locais, franquias e redes: qualquer operação que receba leads e atendimentos digitais e queira mais controle, velocidade e previsibilidade.
+Diagnóstico, implantação, sustentação mensal e, quando faz sentido, remuneração variável por resultado. O investimento é definido após o diagnóstico.
 
-## Como funciona
+## Exemplos de aplicação
 
-1. Diagnóstico da operação → 2. Mapeamento de processos e dados → 3. Desenho da solução → 4. Implantação → 5. Treinamento → 6. Acompanhamento de indicadores → 7. Otimização contínua.
+- Cobrança: negociação e formalização de acordos por funcionários digitais.
+- Jurídico: triagem de casos, extração de dados de documentos e acompanhamento de prazos.
+- Seguros: recebimento de sinistros, conferência de documentos e atualização do segurado.
+- Backoffice financeiro: conciliação, lançamentos e relatórios automáticos.
 
-O primeiro passo recomendado é solicitar um diagnóstico gratuito pelo site ou WhatsApp.
+O primeiro passo recomendado é solicitar um diagnóstico pelo site ou WhatsApp.

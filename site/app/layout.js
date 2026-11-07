@@ -4,22 +4,22 @@ const SITE_URL = 'https://desenvolvendo.ia.br';
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
-  title: 'Agência de IA para vendas, atendimento e gestão | desenvolvendo.ia',
+  title: 'Software sob demanda, agentes de IA e dados para empresas | desenvolvendo.ia',
   description:
-    'Agência de inteligência artificial: agentes de IA para atendimento e vendas, análise de sentimento em tempo real, automações e dashboards gerenciais. Solicite um diagnóstico gratuito.',
+    'Sistemas personalizados, funcionários digitais (agentes de IA) e inteligência de dados que executam o trabalho operacional da sua empresa. Solicite um diagnóstico.',
   keywords: [
-    'agência de IA',
-    'agência de inteligência artificial',
-    'IA para WhatsApp',
-    'automação com IA',
-    'CRM com IA',
-    'análise de sentimento no atendimento',
-    'dashboard comercial',
-    'IA para vendas',
-    'IA para atendimento',
-    'AI automation agency',
+    'desenvolvimento de software sob demanda',
+    'sistemas personalizados para empresas',
+    'agentes de IA para empresas',
+    'funcionários digitais',
+    'automação de processos com IA',
+    'IA para cobrança',
+    'IA para escritórios de advocacia',
+    'IA para seguradoras',
+    'inteligência de dados',
+    'custom software development',
     'AI agents for business',
-    'sentiment analysis for customer service',
+    'AI process automation',
   ],
   alternates: {
     canonical: SITE_URL,
@@ -49,9 +49,9 @@ export const metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'desenvolvendo.ia | Agência de IA para vendas, atendimento e gestão',
+    title: 'desenvolvendo.ia | Software que trabalha pela sua operação',
     description:
-      'Agentes de IA, análise de sentimento em tempo real, automações e dashboards para uma operação mais inteligente. Projetos sob medida e Kit de ferramentas por assinatura.',
+      'Sistemas personalizados, funcionários digitais e inteligência de dados para empresas que têm uma operação para tocar.',
     url: SITE_URL,
     siteName: 'desenvolvendo.ia',
     type: 'website',
@@ -62,15 +62,15 @@ export const metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'desenvolvendo.ia | IA para vender mais, atender melhor e gerenciar com previsibilidade',
+        alt: 'desenvolvendo.ia | Software que trabalha pela sua operação',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'desenvolvendo.ia | Agência de IA',
+    title: 'desenvolvendo.ia | Software que trabalha pela sua operação',
     description:
-      'Agentes de IA, análise de sentimento, automações e dashboards para vendas, atendimento e gestão.',
+      'Sistemas personalizados, funcionários digitais e inteligência de dados para empresas.',
     images: ['/og-image.png'],
   },
 };
@@ -85,7 +85,7 @@ const jsonLd = [
     url: SITE_URL,
     logo: `${SITE_URL}/icon-512.png`,
     description:
-      'Agência de inteligência artificial aplicada a vendas, atendimento e gestão: agentes de IA, análise de sentimento em tempo real, automações e dashboards gerenciais.',
+      'Desenvolvimento de sistemas personalizados, funcionários digitais (agentes de IA) e inteligência de dados que executam o trabalho operacional de empresas.',
     email: 'contato@desenvolvendo.ia.br',
     contactPoint: {
       '@type': 'ContactPoint',
@@ -106,72 +106,37 @@ const jsonLd = [
   },
   {
     '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: 'Kit Super Ferramentas de IA',
-    description:
-      'Assinatura mensal com CRM e gestor de WhatsApp com IA integrada, análise de sentimento em tempo real, ligações por WhatsApp, disparador com IA, creator de imagens e criador de dashboards com IA.',
-    brand: { '@id': `${SITE_URL}/#org` },
-    offers: {
-      '@type': 'AggregateOffer',
-      priceCurrency: 'BRL',
-      lowPrice: '690',
-      highPrice: '890',
-      offerCount: '2',
-      availability: 'https://schema.org/InStock',
-      url: `${SITE_URL}/#kit-ia`,
-    },
-  },
-  {
-    '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'O que a desenvolvendo.ia faz?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Somos uma agência de inteligência artificial que cria agentes de IA para atendimento e vendas, análise de sentimento em tempo real, automações e dashboards gerenciais. Trabalhamos com projetos sob medida e com o Kit Super Ferramentas de IA por assinatura.',
-        },
+        name: "O que a desenvolvendo.ia faz?",
+        acceptedAnswer: { '@type': 'Answer', text: "Desenvolvemos sistemas personalizados, funcionários digitais (agentes de IA) e soluções de inteligência de dados que executam o trabalho operacional da sua empresa." },
       },
       {
         '@type': 'Question',
-        name: 'Quanto custa implantar IA na minha empresa?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'O Kit Super Ferramentas de IA custa R$ 890/mês, ou R$ 690/mês no plano anual no cartão. Projetos personalizados variam conforme o escopo. O diagnóstico gratuito indica o investimento ideal para a sua operação.',
-        },
+        name: "O que é um funcionário digital?",
+        acceptedAnswer: { '@type': 'Answer', text: "É um agente de IA que executa uma tarefa completa, como negociar uma dívida, triar um caso ou conferir documentos, seguindo as regras da sua empresa e registrando tudo." },
       },
       {
         '@type': 'Question',
-        name: 'O que está incluído no Kit Super Ferramentas de IA?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'CRM com gestor de WhatsApp com IA integrada e análise de sentimento em tempo real, ligações por WhatsApp, disparador com IA, creator para geração de imagens e criador de dashboards com IA, tudo em uma única assinatura.',
-        },
+        name: "Preciso saber programar ou operar alguma ferramenta?",
+        acceptedAnswer: { '@type': 'Answer', text: "Não. Nós construímos, integramos e mantemos a solução. Sua equipe recebe o trabalho pronto e acompanha os resultados." },
       },
       {
         '@type': 'Question',
-        name: 'A IA substitui minha equipe de atendimento?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Não. A IA assume tarefas repetitivas como triagem, dúvidas frequentes e follow-up, e orienta sua equipe com análise de sentimento e sugestões em tempo real. Sua equipe foca no que exige julgamento humano.',
-        },
+        name: "Quanto custa?",
+        acceptedAnswer: { '@type': 'Answer', text: "Depende do escopo. Começamos por um diagnóstico que mapeia as oportunidades e indica o investimento e o formato de contratação ideais." },
       },
       {
         '@type': 'Question',
-        name: 'O que é análise de sentimento em tempo real?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'É a leitura automática do clima de cada conversa (positivo, neutro ou negativo) enquanto ela acontece. O sistema alerta sobre risco de perda do lead, sugere abordagens e dá ao gestor visão da qualidade do atendimento por atendente e por período.',
-        },
+        name: "Quanto tempo leva para colocar no ar?",
+        acceptedAnswer: { '@type': 'Answer', text: "Como partimos de módulos próprios já testados, as primeiras entregas costumam rodar em semanas, não em meses." },
       },
       {
         '@type': 'Question',
-        name: 'Quanto tempo leva para começar a usar IA?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'O Kit Super Ferramentas de IA fica ativo em poucos dias. Projetos sob medida começam com um diagnóstico da operação e seguem um plano de implantação por etapas, com treinamento da equipe e acompanhamento contínuo.',
-        },
+        name: "Os dados da minha empresa ficam seguros?",
+        acceptedAnswer: { '@type': 'Answer', text: "Sim. Trabalhamos com controle de acesso, registros de auditoria e adequação à LGPD em todas as soluções." },
       },
     ],
   },
