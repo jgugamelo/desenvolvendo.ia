@@ -5,6 +5,7 @@ import Reveal from './Reveal';
 import Icon from './Icon';
 import ProductsDemo from './ProductsDemo';
 import LightParticles from './LightParticles';
+import { AgentsViz, SystemsViz, DataViz } from './PillarVisuals';
 import { trackEvent, whatsappLink } from '@/lib/i18n';
 
 /* Centered heading used across sections (reference style) */
@@ -71,22 +72,11 @@ export function Problem({ t }) {
 /* ----------------------------------------------------------------
    Pillars: bento grid of glass cards with image + floating UI chip.
 ----------------------------------------------------------------- */
-function PillarCard({ item, large }) {
+function PillarCard({ item, large, Viz }) {
   return (
     <div className={`surface surface-hover group flex h-full flex-col overflow-hidden rounded-[28px] ${large ? 'lg:flex-row' : ''}`}>
-      <div className={`relative overflow-hidden ${large ? 'lg:w-[55%]' : ''}`}>
-        <img
-          src={item.img}
-          alt={item.name}
-          loading="lazy"
-          width="640"
-          height="480"
-          className={`w-full object-cover transition-transform duration-700 group-hover:scale-105 ${large ? 'aspect-[4/3] lg:h-full' : 'aspect-[16/10]'}`}
-        />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-950/70 via-transparent to-transparent" />
-        <span className="float-chip bottom-4 left-4">
-          <Icon name="check-circle" className="h-4 w-4 text-ai" /> {item.chip}
-        </span>
+      <div className={`relative overflow-hidden ${large ? 'lg:w-[55%] lg:self-center' : ''}`}>
+        <Viz v={item.viz} chip={item.chip} />
       </div>
       <div className={`flex flex-1 flex-col p-7 ${large ? 'lg:justify-center lg:p-10' : ''}`}>
         <span className="font-display text-sm font-bold text-ai">{item.tag}</span>
@@ -114,13 +104,13 @@ export function Pillars({ t }) {
         <Heading label={p.label} title={p.title} subtitle={p.subtitle} />
         <div className="mt-16 grid gap-6 lg:grid-cols-2">
           <Reveal className="lg:col-span-2">
-            <PillarCard item={b} large />
+            <PillarCard item={b} large Viz={AgentsViz} />
           </Reveal>
           <Reveal delay={1}>
-            <PillarCard item={a} />
+            <PillarCard item={a} Viz={SystemsViz} />
           </Reveal>
           <Reveal delay={2}>
-            <PillarCard item={c} />
+            <PillarCard item={c} Viz={DataViz} />
           </Reveal>
         </div>
       </div>

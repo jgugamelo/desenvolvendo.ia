@@ -355,3 +355,37 @@ select option { background: #081228; color: #e2e8f0; }
 .sim-range { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 9999px; background: #e2e8f0; outline: none; }
 .sim-range::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; border-radius: 9999px; background: linear-gradient(135deg, #2e7cf6, #22d3aa); box-shadow: 0 4px 14px rgba(46,124,246,.5); cursor: pointer; }
 .sim-range::-moz-range-thumb { width: 20px; height: 20px; border: 0; border-radius: 9999px; background: linear-gradient(135deg, #2e7cf6, #22d3aa); cursor: pointer; }
+
+/* ---------- Pillar animated scenes ---------- */
+.viz-bg {
+  background:
+    radial-gradient(circle at 22% 18%, rgba(46, 124, 246, 0.22), transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(34, 211, 170, 0.14), transparent 45%),
+    linear-gradient(180deg, #0a1630, #060d1f);
+}
+.viz-grid {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(ellipse at center, #000 40%, transparent 85%);
+}
+.viz-in { animation: vizIn 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+@keyframes vizIn { from { opacity: 0; transform: translateY(14px) scale(0.97); } to { opacity: 1; transform: none; } }
+.viz-spin { animation: vizSpin 5s linear infinite; }
+@keyframes vizSpin { to { transform: rotate(360deg); } }
+.viz-packet { animation: vizPacket 1.8s ease-in-out infinite; }
+@keyframes vizPacket { 0% { left: 0; opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { left: 100%; opacity: 0; } }
+.viz-dash { stroke-dasharray: 3 7; animation: vizDash 1.2s linear infinite; }
+@keyframes vizDash { to { stroke-dashoffset: -20; } }
+.viz-ring { animation: vizRing 1.1s ease-out both; }
+@keyframes vizRing { from { transform: scale(1); opacity: 0.9; } to { transform: scale(1.75); opacity: 0; } }
+.viz-flash { animation: vizFlash 1.2s ease-out both; }
+@keyframes vizFlash { from { background: rgba(46, 124, 246, 0.28); } to { background: rgba(46, 124, 246, 0); } }
+.viz-toast { animation: vizToast 1.3s ease both; }
+@keyframes vizToast { from { opacity: 0; transform: translate(-50%, 10px); } to { opacity: 1; transform: translate(-50%, 0); } }
+.viz-toast.right-10 { animation-name: vizToastR; }
+@keyframes vizToastR { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .viz-spin, .viz-packet, .viz-dash { animation: none; }
+}
