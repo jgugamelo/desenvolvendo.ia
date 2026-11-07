@@ -3,10 +3,16 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://desenvolvendo.ia.br/</loc>
-    <lastmod>2026-07-06</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://desenvolvendo.ia.br/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://desenvolvendo.ia.br/" />
+  </url>
+  <url>
+    <loc>https://desenvolvendo.ia.br/privacidade/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

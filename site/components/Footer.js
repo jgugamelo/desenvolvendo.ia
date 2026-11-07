@@ -95,11 +95,8 @@ export default function Footer({ t, lang, setLang }) {
             © {year} desenvolvendo.ia · {t.footer.rights}
           </p>
           <div className="flex gap-6">
-            <a href="#" className="transition-colors hover:text-ai">
+            <a href="/privacidade/" className="transition-colors hover:text-ai">
               {t.footer.privacy}
-            </a>
-            <a href="#" className="transition-colors hover:text-ai">
-              {t.footer.terms}
             </a>
           </div>
         </div>

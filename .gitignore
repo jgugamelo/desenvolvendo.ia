@@ -15,6 +15,8 @@ deploy-hostgator.zip
 # (árvore suja bloqueia o Deploy HEAD Commit no cPanel)
 /index.html
 /404.html
+/404/
+/privacidade/
 /index.txt
 /_next/
 /.htaccess
