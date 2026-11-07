@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { translations } from '@/lib/i18n';
+import { translations, LANG_SWITCH_ENABLED } from '@/lib/i18n';
 
 import ParticleCanvas from '@/components/ParticleCanvas';
 import CursorGlow from '@/components/CursorGlow';
@@ -22,7 +22,7 @@ export default function Page() {
   useEffect(() => {
     try {
       const saved = window.localStorage.getItem('lang');
-      if (saved === 'en' || saved === 'pt') setLang(saved);
+      if (LANG_SWITCH_ENABLED && (saved === 'en' || saved === 'pt')) setLang(saved);
     } catch {}
   }, []);
 

@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Icon from './Icon';
 import Logo from './Logo';
-import { trackEvent } from '@/lib/i18n';
+import { trackEvent, LANG_SWITCH_ENABLED } from '@/lib/i18n';
 
 export default function Header({ t, lang, setLang }) {
   const [scrolled, setScrolled] = useState(false);
@@ -53,6 +53,7 @@ export default function Header({ t, lang, setLang }) {
         </nav>
 
         <div className="flex items-center gap-3">
+          {LANG_SWITCH_ENABLED && (
           <div className="flex overflow-hidden rounded-lg border border-slate-600/40 text-xs font-semibold">
             {['pt', 'en'].map((l) => (
               <button
@@ -66,6 +67,7 @@ export default function Header({ t, lang, setLang }) {
               </button>
             ))}
           </div>
+          )}
 
           <a
             href="#diagnostico"

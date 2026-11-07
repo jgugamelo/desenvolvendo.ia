@@ -25,7 +25,6 @@ export const metadata = {
     canonical: SITE_URL,
     languages: {
       'pt-BR': SITE_URL,
-      en: SITE_URL,
       'x-default': SITE_URL,
     },
   },
@@ -56,7 +55,6 @@ export const metadata = {
     siteName: 'desenvolvendo.ia',
     type: 'website',
     locale: 'pt_BR',
-    alternateLocale: 'en_US',
     images: [
       {
         url: '/og-image.png',
@@ -102,7 +100,7 @@ const jsonLd = [
     url: SITE_URL,
     name: 'desenvolvendo.ia',
     publisher: { '@id': `${SITE_URL}/#org` },
-    inLanguage: ['pt-BR', 'en'],
+    inLanguage: 'pt-BR',
   },
   {
     '@context': 'https://schema.org',

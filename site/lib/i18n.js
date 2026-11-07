@@ -644,6 +644,9 @@ export const translations = {
   },
 };
 
+// Seletor PT/EN. Mude para true para reativar a versão em inglês.
+export const LANG_SWITCH_ENABLED = false;
+
 export const WHATSAPP_NUMBER = '5521986780204';
 
 export function whatsappLink(lang) {

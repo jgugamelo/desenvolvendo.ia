@@ -2,7 +2,7 @@
 
 import Icon from './Icon';
 import Logo from './Logo';
-import { whatsappLink, trackEvent } from '@/lib/i18n';
+import { whatsappLink, trackEvent, LANG_SWITCH_ENABLED } from '@/lib/i18n';
 
 export default function Footer({ t, lang, setLang }) {
   const year = new Date().getFullYear();
@@ -72,6 +72,7 @@ export default function Footer({ t, lang, setLang }) {
                 </a>
               </li>
             </ul>
+            {LANG_SWITCH_ENABLED && (
             <div className="mt-5 flex overflow-hidden rounded-lg border border-slate-600/40 text-xs font-semibold">
               {['pt', 'en'].map((l) => (
                 <button
@@ -85,6 +86,7 @@ export default function Footer({ t, lang, setLang }) {
                 </button>
               ))}
             </div>
+            )}
           </div>
         </div>
 
