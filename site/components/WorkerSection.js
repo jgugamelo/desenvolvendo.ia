@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import Reveal from './Reveal';
 import Icon from './Icon';
 import LightParticles from './LightParticles';
+import { ExternalLink, Newspaper } from 'lucide-react';
 import { trackEvent } from '@/lib/i18n';
 
 function Field({ label, display, children }) {
@@ -64,6 +65,56 @@ function Simulator({ s }) {
           {s.cta} <Icon name="arrow-right" className="h-4 w-4" />
         </a>
       </div>
+    </div>
+  );
+}
+
+function MarketCases({ m }) {
+  return (
+    <div className="mt-24">
+      <Reveal className="mx-auto max-w-3xl text-center">
+        <span className="label-light">
+          <Newspaper className="h-3.5 w-3.5" /> {m.label}
+        </span>
+        <h3 className="font-display text-2xl font-bold text-slate-900 sm:text-4xl">{m.title}</h3>
+        <p className="mt-4 text-slate-600">{m.subtitle}</p>
+      </Reveal>
+
+      <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {m.cases.map((c, i) => (
+          <Reveal key={c.company} delay={(i % 4) + 1}>
+            <article className="card-light card-light-hover flex h-full flex-col rounded-[24px] p-6">
+              <div className="flex items-center justify-between gap-3">
+                <h4 className="font-display text-lg font-bold text-slate-900">{c.company}</h4>
+                <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-semibold text-slate-500">{c.where}</span>
+              </div>
+              <p className="text-gradient mt-5 font-display text-4xl font-bold">{c.metric}</p>
+              <p className="mt-1 text-sm font-medium text-slate-700">{c.metricLabel}</p>
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-slate-500">{c.text}</p>
+              <div className="mt-5 flex flex-wrap gap-x-3 gap-y-1.5 border-t border-slate-100 pt-4">
+                {c.sources.map((src) => (
+                  <a
+                    key={src.url}
+                    href={src.url}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    onClick={() => trackEvent('click_market_source', { company: c.company, source: src.name })}
+                    className="inline-flex items-center gap-1 text-xs font-semibold text-accent transition-colors hover:text-slate-900"
+                  >
+                    {m.sourceLabel}: {src.name}, {src.date}
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                ))}
+              </div>
+            </article>
+          </Reveal>
+        ))}
+      </div>
+
+      <Reveal className="mx-auto mt-8 max-w-3xl text-center">
+        <p className="font-medium text-slate-800">{m.takeaway}</p>
+        <p className="mt-2 text-xs text-slate-400">{m.disclaimer}</p>
+      </Reveal>
     </div>
   );
 }
@@ -167,6 +218,9 @@ export default function WorkerSection({ t }) {
             </div>
           </Reveal>
         </div>
+
+        {/* market cases from the press */}
+        <MarketCases m={w.market} />
 
         {/* simulator */}
         <Reveal className="mt-24">
