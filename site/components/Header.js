@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Icon from './Icon';
 import Logo from './Logo';
-import { trackEvent, LANG_SWITCH_ENABLED } from '@/lib/i18n';
+import { trackEvent, LANG_SWITCH_ENABLED, BOOKING_URL } from '@/lib/i18n';
 
 export default function Header({ t, lang, setLang }) {
   const [scrolled, setScrolled] = useState(false);
@@ -70,11 +70,13 @@ export default function Header({ t, lang, setLang }) {
           )}
 
           <a
-            href="#diagnostico"
-            onClick={() => trackEvent('click_cta_diagnostico', { placement: 'header' })}
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackEvent('click_agendar', { placement: 'header' })}
             className="hidden rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-accent-soft md:inline-flex"
           >
-            {t.nav.cta}
+            {t.booking.cta}
           </a>
 
           <button
@@ -100,11 +102,16 @@ export default function Header({ t, lang, setLang }) {
             </a>
           ))}
           <a
-            href="#diagnostico"
-            onClick={() => setOpen(false)}
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => {
+              setOpen(false);
+              trackEvent('click_agendar', { placement: 'menu' });
+            }}
             className="mt-2 block rounded-xl bg-accent px-5 py-3 text-center text-sm font-semibold text-white"
           >
-            {t.nav.cta}
+            {t.booking.cta}
           </a>
         </nav>
       )}

@@ -347,6 +347,11 @@ export const translations = {
         },
       ],
     },
+    booking: {
+      cta: 'Agendar diagnóstico',
+      title: 'Prefere escolher o horário agora?',
+      text: 'Diagnóstico gratuito por videochamada, de segunda a sexta, entre 14h e 17h.',
+    },
     finalCta: {
       title: 'Qual trabalho da sua operação um software poderia fazer?',
       text: 'Solicite um diagnóstico e receba um mapa do que pode ser executado por sistemas e funcionários digitais na sua empresa.',
@@ -745,6 +750,11 @@ export const translations = {
         },
       ],
     },
+    booking: {
+      cta: 'Book a diagnosis',
+      title: 'Prefer to pick a time now?',
+      text: 'Free video diagnosis, Monday to Friday, 2pm to 5pm (Brasília time).',
+    },
     finalCta: {
       title: 'Which part of your operation could software handle?',
       text: 'Request a diagnosis and get a map of what systems and digital workers can execute in your company.',
@@ -798,6 +808,9 @@ export const translations = {
 
 // Seletor PT/EN. Mude para true para reativar a versão em inglês.
 export const LANG_SWITCH_ENABLED = false;
+
+// Página pública de agendamento do diagnóstico (Google Agenda).
+export const BOOKING_URL = 'https://calendar.app.google/Bc5D35PuXonKgw1n7';
 
 export const WHATSAPP_NUMBER = '5521986780204';
 

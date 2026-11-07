@@ -5,7 +5,7 @@ import Reveal from './Reveal';
 import Icon from './Icon';
 import ProductsDemo from './ProductsDemo';
 import { AgentsViz, SystemsViz, DataViz } from './PillarVisuals';
-import { trackEvent, whatsappLink } from '@/lib/i18n';
+import { trackEvent, whatsappLink, BOOKING_URL } from '@/lib/i18n';
 
 /* Centered heading used across sections (reference style) */
 export function Heading({ label, title, subtitle, className = '', light = false }) {
@@ -332,11 +332,13 @@ export function FinalCta({ t, lang }) {
             <p className="relative mx-auto mt-5 max-w-2xl text-lg text-slate-300">{t.finalCta.text}</p>
             <div className="relative mt-10 flex flex-wrap justify-center gap-4">
               <a
-                href="#diagnostico"
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary"
-                onClick={() => trackEvent('click_cta_diagnostico', { placement: 'final' })}
+                onClick={() => trackEvent('click_agendar', { placement: 'final' })}
               >
-                {t.finalCta.primary} <Icon name="arrow-right" className="h-4 w-4" />
+                {t.booking.cta} <Icon name="arrow-right" className="h-4 w-4" />
               </a>
               <a
                 href={whatsappLink(lang)}
