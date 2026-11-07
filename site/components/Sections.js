@@ -7,12 +7,12 @@ import ProductsDemo from './ProductsDemo';
 import { trackEvent, whatsappLink } from '@/lib/i18n';
 
 /* Centered heading used across sections (reference style) */
-export function Heading({ label, title, subtitle, className = '' }) {
+export function Heading({ label, title, subtitle, className = '', light = false }) {
   return (
     <Reveal className={`mx-auto max-w-3xl text-center ${className}`}>
-      <span className="section-label">{label}</span>
-      <h2 className="font-display text-3xl font-bold leading-tight text-white sm:text-5xl">{title}</h2>
-      {subtitle && <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-400">{subtitle}</p>}
+      <span className={light ? 'label-light' : 'section-label'}>{label}</span>
+      <h2 className={`font-display text-3xl font-bold leading-tight sm:text-5xl ${light ? 'text-slate-900' : 'text-white'}`}>{title}</h2>
+      {subtitle && <p className={`mx-auto mt-5 max-w-2xl text-lg ${light ? 'text-slate-600' : 'text-slate-400'}`}>{subtitle}</p>}
     </Reveal>
   );
 }
@@ -23,26 +23,21 @@ export function Heading({ label, title, subtitle, className = '' }) {
 export function Problem({ t }) {
   const p = t.problem;
   return (
-    <section className="relative z-10 py-24 lg:py-32">
-      <div className="glow-blob left-[-10%] top-1/3 h-[420px] w-[420px] bg-red-500/10" />
-      <div className="glow-blob right-[-10%] top-1/4 h-[480px] w-[480px] bg-accent/20" />
+    <section className="section-light relative z-10 py-24 lg:py-32">
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
-        <Heading label={p.label} title={p.title} subtitle={p.intro} />
+        <Heading label={p.label} title={p.title} subtitle={p.intro} light />
 
         <Reveal className="mt-14">
-          <div className="surface relative grid overflow-hidden rounded-[32px] lg:grid-cols-2">
-            {/* center divider */}
-            <div className="pointer-events-none absolute inset-y-8 left-1/2 hidden w-px bg-gradient-to-b from-transparent via-white/20 to-transparent lg:block" />
-            <div className="absolute left-1/2 top-1/2 z-10 hidden h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-ink-950 font-display text-xs font-bold text-slate-300 lg:flex">
+          <div className="card-light relative grid overflow-hidden rounded-[32px] lg:grid-cols-2">
+            <div className="absolute left-1/2 top-1/2 z-10 hidden h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white font-display text-xs font-bold text-slate-500 shadow-md lg:flex">
               VS
             </div>
-
             <div className="p-8 lg:p-12">
-              <span className="pill border-red-400/20 bg-red-400/5 text-red-300">{p.todayTitle}</span>
+              <span className="pill-light border-red-200 bg-red-50 text-red-600">{p.todayTitle}</span>
               <ul className="mt-7 space-y-5">
                 {p.today.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-slate-400">
-                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-red-400/10 text-red-300">
+                  <li key={item} className="flex items-start gap-3 text-slate-600">
+                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-red-50 text-red-500">
                       <Icon name="x" className="h-3.5 w-3.5" strokeWidth={2.5} />
                     </span>
                     {item}
@@ -50,10 +45,10 @@ export function Problem({ t }) {
                 ))}
               </ul>
             </div>
-
-            <div className="relative bg-gradient-to-br from-accent/[0.12] via-transparent to-ai/[0.08] p-8 lg:p-12">
+            <div className="relative bg-gradient-to-br from-ink-900 to-ink-800 p-8 lg:p-12">
+              <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-accent/25 blur-3xl" />
               <span className="pill border-ai/30 bg-ai/10 text-ai">{p.withTitle}</span>
-              <ul className="mt-7 space-y-5">
+              <ul className="relative mt-7 space-y-5">
                 {p.with.map((item) => (
                   <li key={item} className="flex items-start gap-3 text-white">
                     <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ai/15 text-ai">
@@ -176,13 +171,12 @@ export function Examples({ t }) {
   const tab = e.tabs[active];
 
   return (
-    <section id="exemplos" className="relative z-10 py-24 lg:py-32">
-      <div className="section-beam" />
+    <section id="exemplos" className="section-light relative z-10 py-24 lg:py-32">
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
-        <Heading label={e.label} title={e.title} subtitle={e.subtitle} />
+        <Heading label={e.label} title={e.title} subtitle={e.subtitle} light />
 
         <Reveal className="mt-12 flex justify-center">
-          <div className="inline-flex flex-wrap justify-center gap-1 rounded-full border border-white/10 bg-white/[0.04] p-1.5 backdrop-blur-xl">
+          <div className="inline-flex flex-wrap justify-center gap-1 rounded-full border border-slate-200 bg-white p-1.5 shadow-sm">
             {e.tabs.map((x, i) => (
               <button
                 key={x.name}
@@ -193,7 +187,7 @@ export function Examples({ t }) {
                 className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-all duration-300 ${
                   i === active
                     ? 'bg-gradient-to-r from-accent to-accent-soft text-white shadow-lg shadow-accent/30'
-                    : 'text-slate-400 hover:text-white'
+                    : 'text-slate-500 hover:text-slate-900'
                 }`}
               >
                 {x.name}
@@ -202,27 +196,26 @@ export function Examples({ t }) {
           </div>
         </Reveal>
 
-        <div key={active} className="chat-bubble surface mt-10 grid overflow-hidden rounded-[32px] lg:grid-cols-2">
+        <div key={active} className="chat-bubble card-light mt-10 grid overflow-hidden rounded-[32px] lg:grid-cols-2">
           <div className="relative">
             <img
               src={tab.img}
               alt={tab.name}
               loading="lazy"
-              width="560"
-              height="420"
+              width="600"
+              height="452"
               className="aspect-[4/3] h-full w-full object-cover"
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent to-ink-950/40" />
-            <span className="float-chip right-5 top-5">
+            <span className="absolute right-5 top-5 flex items-center gap-2 rounded-2xl border border-slate-200 bg-white/95 px-3.5 py-2.5 text-xs font-semibold text-slate-900 shadow-xl backdrop-blur">
               <span className="h-2 w-2 animate-pulse rounded-full bg-ai" /> {tab.chip}
             </span>
           </div>
           <div className="flex flex-col justify-center p-8 lg:p-12">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{e.taskTitle}</p>
-            <p className="mt-2 text-lg text-slate-300">{tab.task}</p>
-            <p className="mt-8 text-xs font-semibold uppercase tracking-[0.2em] text-ai">{e.howTitle}</p>
-            <p className="mt-2 text-lg text-white">{tab.how}</p>
-            <div className="mt-9 inline-flex w-fit items-center gap-2 rounded-full border border-ai/30 bg-ai/10 px-5 py-2.5 font-display font-semibold text-ai">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">{e.taskTitle}</p>
+            <p className="mt-2 text-lg text-slate-600">{tab.task}</p>
+            <p className="mt-8 text-xs font-semibold uppercase tracking-[0.2em] text-accent">{e.howTitle}</p>
+            <p className="mt-2 text-lg text-slate-900">{tab.how}</p>
+            <div className="mt-9 inline-flex w-fit items-center gap-2 rounded-full bg-gradient-to-r from-accent to-ai px-5 py-2.5 font-display font-semibold text-white shadow-lg shadow-accent/25">
               <Icon name="arrow-right" className="h-4 w-4" />
               {tab.result}
             </div>
@@ -296,30 +289,34 @@ export function How({ t }) {
 export function Engagement({ t }) {
   const g = t.engagement;
   return (
-    <section className="relative z-10 py-24 lg:py-32">
-      <div className="section-beam" />
+    <section className="section-white relative z-10 py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <Heading label={g.label} title={g.title} subtitle={g.subtitle} />
+        <Heading label={g.label} title={g.title} subtitle={g.subtitle} light />
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {g.items.map((p, i) => (
             <Reveal key={p.name} delay={(i % 4) + 1}>
-              <div
-                className={`surface surface-hover relative h-full rounded-[28px] p-7 ${
-                  p.tag ? 'border-accent/40 bg-gradient-to-b from-accent/20 to-transparent shadow-[0_30px_80px_-30px_rgba(46,124,246,0.6)]' : ''
-                }`}
-              >
-                <div className="flex items-center justify-between">
-                  <span className="font-display text-sm font-bold text-slate-500">0{i + 1}</span>
-                  {p.tag && <span className="pill border-ai/30 bg-ai/15 text-ai">{p.tag}</span>}
+              {p.tag ? (
+                <div className="relative h-full overflow-hidden rounded-[28px] bg-gradient-to-br from-ink-900 to-ink-800 p-7 text-white shadow-2xl shadow-accent/20">
+                  <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-accent/30 blur-3xl" />
+                  <div className="relative flex items-center justify-between">
+                    <span className="font-display text-sm font-bold text-slate-400">0{i + 1}</span>
+                    <span className="pill border-ai/30 bg-ai/15 text-ai">{p.tag}</span>
+                  </div>
+                  <h3 className="relative mt-8 font-display text-xl font-semibold">{p.name}</h3>
+                  <p className="relative mt-2 text-sm leading-relaxed text-slate-300">{p.text}</p>
                 </div>
-                <h3 className="mt-8 font-display text-xl font-semibold text-white">{p.name}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-400">{p.text}</p>
-              </div>
+              ) : (
+                <div className="card-light card-light-hover h-full rounded-[28px] p-7">
+                  <span className="font-display text-sm font-bold text-slate-300">0{i + 1}</span>
+                  <h3 className="mt-8 font-display text-xl font-semibold text-slate-900">{p.name}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{p.text}</p>
+                </div>
+              )}
             </Reveal>
           ))}
         </div>
         <Reveal className="mt-10 text-center">
-          <p className="text-slate-400">{g.cta}</p>
+          <p className="text-slate-600">{g.cta}</p>
         </Reveal>
       </div>
     </section>

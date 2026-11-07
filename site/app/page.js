@@ -10,6 +10,7 @@ import Hero from '@/components/Hero';
 import TechStack from '@/components/TechStack';
 import { Problem, Pillars, InAction, Examples, How, Engagement, FinalCta } from '@/components/Sections';
 import Faq from '@/components/Faq';
+import WorkerSection from '@/components/WorkerSection';
 import LeadForm from '@/components/LeadForm';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -42,6 +43,7 @@ export default function Page() {
       <TechStack t={t} />
       <Problem t={t} />
       <Pillars t={t} />
+      <WorkerSection t={t} />
       <InAction t={t} />
       <Examples t={t} />
       <How t={t} />

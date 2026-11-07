@@ -2,6 +2,7 @@ export const translations = {
   pt: {
     nav: {
       solutions: 'Soluções',
+      worker: 'Funcionário digital',
       examples: 'Exemplos',
       how: 'Como trabalhamos',
       faq: 'Dúvidas',
@@ -96,6 +97,57 @@ export const translations = {
         },
       ],
     },
+    worker: {
+      label: 'Funcionário digital',
+      title: 'Um novo tipo de colaborador para a sua operação',
+      subtitle:
+        'Um agente de IA treinado nas regras da sua empresa, que executa tarefas completas do início ao fim, 24 horas por dia, e presta contas de tudo o que faz.',
+      img: '/media/amb-gestor.webp',
+      chip: 'Turno da noite: 142 tarefas concluídas',
+      vsTitle: 'Não é um chatbot',
+      vs: [
+        { a: 'Chatbot responde perguntas', b: 'Funcionário digital entrega trabalho' },
+        { a: 'Segue um roteiro fixo', b: 'Entende o contexto e decide dentro das regras' },
+        { a: 'Fica isolado no chat', b: 'Consulta e atualiza os sistemas da empresa' },
+        { a: 'Termina na resposta', b: 'Termina na tarefa concluída e registrada' },
+      ],
+      howTitle: 'Como ele trabalha',
+      how: [
+        { icon: 'messages-square', title: 'Recebe', text: 'Pedidos chegam por WhatsApp, e-mail, formulário ou pelo próprio sistema.' },
+        { icon: 'eye', title: 'Entende', text: 'Lê a mensagem, os documentos e o histórico, e identifica o sentimento do cliente.' },
+        { icon: 'zap', title: 'Executa', text: 'Consulta sistemas, aplica as regras da empresa e conclui a tarefa.' },
+        { icon: 'bar-chart-3', title: 'Reporta', text: 'Registra tudo, avisa a equipe e passa para um humano quando necessário.' },
+      ],
+      gainsTitle: 'Onde está o ganho',
+      gains: [
+        { value: '24/7', label: 'Trabalha à noite, nos fins de semana e feriados' },
+        { value: 'Paralelo', label: 'Atende muitas conversas ao mesmo tempo' },
+        { value: 'Padrão', label: 'Executa sempre do mesmo jeito, sem esquecer etapas' },
+        { value: 'Escala', label: 'Absorve picos de demanda sem novas contratações' },
+      ],
+      controlTitle: 'Você continua no controle',
+      control: [
+        'Limites definidos por você: valores, prazos e exceções',
+        'Aprovação humana nas decisões sensíveis',
+        'Histórico auditável de cada ação',
+        'Painel com produtividade e qualidade em tempo real',
+      ],
+      sim: {
+        title: 'Simule o potencial na sua operação',
+        people: 'Pessoas dedicadas a tarefas repetitivas',
+        cost: 'Custo mensal por pessoa (salário + encargos)',
+        share: 'Parte do trabalho que pode ser executada',
+        currency: 'R$',
+        locale: 'pt-BR',
+        hours: 'horas liberadas por mês',
+        value: 'em capacidade liberada por mês',
+        note: 'Estimativa simplificada para referência. O diagnóstico calcula o potencial real da sua operação.',
+        defaults: { people: 5, cost: 4500, share: 50 },
+        costMax: 15000,
+        costStep: 250,
+        cta: 'Quero o cálculo real',
+      },
+    },
     action: {
       label: 'Na prática',
       title: 'Um funcionário digital trabalhando às 23h',
@@ -126,7 +178,7 @@ export const translations = {
       howTitle: 'Como fazemos',
       tabs: [
         {
-          img: '/media/ex-cobranca.webp',
+          img: '/media/amb-cobranca.webp',
           name: 'Cobrança',
           task: 'Contatar devedores, negociar e formalizar acordos.',
           how: 'Funcionários digitais conduzem a negociação dentro das suas regras e registram cada acordo.',
@@ -134,7 +186,7 @@ export const translations = {
           chip: 'Acordo formalizado',
         },
         {
-          img: '/media/ex-juridico.webp',
+          img: '/media/amb-juridico.webp',
           name: 'Jurídico',
           task: 'Triar novos casos, organizar documentos e acompanhar prazos.',
           how: 'Agentes fazem a triagem, extraem dados de documentos e alimentam o sistema do escritório.',
@@ -142,7 +194,7 @@ export const translations = {
           chip: 'Caso triado e enviado',
         },
         {
-          img: '/media/ex-seguros.webp',
+          img: '/media/amb-seguros.webp',
           name: 'Seguros',
           task: 'Receber sinistros, conferir documentos e atualizar o cliente.',
           how: 'O agente recebe o aviso, confere a documentação e mantém o segurado informado em cada etapa.',
@@ -150,7 +202,7 @@ export const translations = {
           chip: 'Documentos conferidos',
         },
         {
-          img: '/media/ex-backoffice.webp',
+          img: '/media/amb-backoffice.webp',
           name: 'Backoffice financeiro',
           task: 'Conciliar pagamentos, lançar notas e montar relatórios.',
           how: 'Automações conciliam e lançam os dados, e painéis mostram o resultado em tempo real.',
@@ -273,6 +325,7 @@ export const translations = {
   en: {
     nav: {
       solutions: 'Solutions',
+      worker: 'Digital worker',
       examples: 'Examples',
       how: 'How we work',
       faq: 'FAQ',
@@ -367,6 +420,57 @@ export const translations = {
         },
       ],
     },
+    worker: {
+      label: 'Digital worker',
+      title: 'A new kind of team member for your operation',
+      subtitle:
+        'An AI agent trained on your company’s rules that completes entire tasks start to finish, 24/7, and is accountable for everything it does.',
+      img: '/media/amb-gestor.webp',
+      chip: 'Night shift: 142 tasks completed',
+      vsTitle: 'It’s not a chatbot',
+      vs: [
+        { a: 'A chatbot answers questions', b: 'A digital worker delivers work' },
+        { a: 'Follows a fixed script', b: 'Understands context and decides within your rules' },
+        { a: 'Stays isolated in the chat', b: 'Reads and updates your company systems' },
+        { a: 'Ends at the answer', b: 'Ends at the task completed and logged' },
+      ],
+      howTitle: 'How it works',
+      how: [
+        { icon: 'messages-square', title: 'Receives', text: 'Requests arrive via WhatsApp, email, forms or your own system.' },
+        { icon: 'eye', title: 'Understands', text: 'Reads the message, documents and history, and detects customer sentiment.' },
+        { icon: 'zap', title: 'Executes', text: 'Queries systems, applies company rules and completes the task.' },
+        { icon: 'bar-chart-3', title: 'Reports', text: 'Logs everything, notifies the team and hands off to a human when needed.' },
+      ],
+      gainsTitle: 'Where the gain comes from',
+      gains: [
+        { value: '24/7', label: 'Works nights, weekends and holidays' },
+        { value: 'Parallel', label: 'Handles many conversations at once' },
+        { value: 'Consistent', label: 'Always executes the same way, no skipped steps' },
+        { value: 'Scale', label: 'Absorbs demand peaks without new hires' },
+      ],
+      controlTitle: 'You stay in control',
+      control: [
+        'Limits you define: amounts, deadlines and exceptions',
+        'Human approval for sensitive decisions',
+        'Auditable history of every action',
+        'Real-time productivity and quality dashboard',
+      ],
+      sim: {
+        title: 'Estimate the potential in your operation',
+        people: 'People on repetitive tasks',
+        cost: 'Monthly cost per person (salary + benefits)',
+        share: 'Share of the work that can be executed',
+        currency: '$',
+        locale: 'en-US',
+        hours: 'hours freed per month',
+        value: 'in capacity freed per month',
+        note: 'Simplified estimate for reference. The diagnosis calculates your operation’s real potential.',
+        defaults: { people: 5, cost: 4000, share: 50 },
+        costMax: 15000,
+        costStep: 250,
+        cta: 'Get the real numbers',
+      },
+    },
     action: {
       label: 'In practice',
       title: 'A digital worker on the job at 11pm',
@@ -397,7 +501,7 @@ export const translations = {
       howTitle: 'How we do it',
       tabs: [
         {
-          img: '/media/ex-cobranca.webp',
+          img: '/media/amb-cobranca.webp',
           name: 'Collections',
           task: 'Reach debtors, negotiate and formalize agreements.',
           how: 'Digital workers run the negotiation within your rules and log every agreement.',
@@ -405,7 +509,7 @@ export const translations = {
           chip: 'Agreement formalized',
         },
         {
-          img: '/media/ex-juridico.webp',
+          img: '/media/amb-juridico.webp',
           name: 'Legal',
           task: 'Triage new cases, organize documents and track deadlines.',
           how: 'Agents triage, extract data from documents and feed the firm’s system.',
@@ -413,7 +517,7 @@ export const translations = {
           chip: 'Case triaged and routed',
         },
         {
-          img: '/media/ex-seguros.webp',
+          img: '/media/amb-seguros.webp',
           name: 'Insurance',
           task: 'Receive claims, check documents and update the client.',
           how: 'The agent takes the claim, checks the paperwork and keeps the insured informed at every step.',
@@ -421,7 +525,7 @@ export const translations = {
           chip: 'Documents verified',
         },
         {
-          img: '/media/ex-backoffice.webp',
+          img: '/media/amb-backoffice.webp',
           name: 'Finance back office',
           task: 'Reconcile payments, post invoices and build reports.',
           how: 'Automations reconcile and post the data, and dashboards show results in real time.',

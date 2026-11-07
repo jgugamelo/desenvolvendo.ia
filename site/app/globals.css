@@ -330,3 +330,28 @@ html {
 
 /* dark dropdown options */
 select option { background: #081228; color: #e2e8f0; }
+
+/* ---------- light chapters (organize subjects) ---------- */
+.section-light { background: #f4f7fb; color: #0f172a; }
+.section-white { background: #ffffff; color: #0f172a; }
+.card-light {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 24px 60px -36px rgba(15, 23, 42, 0.28);
+}
+.card-light-hover { transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease; }
+.card-light-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(46, 124, 246, 0.35);
+  box-shadow: 0 30px 70px -34px rgba(46, 124, 246, 0.45);
+}
+.label-light {
+  @apply mb-4 inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-accent;
+}
+.pill-light {
+  @apply inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3.5 py-1.5 text-xs font-medium text-slate-600;
+}
+/* range slider */
+.sim-range { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 9999px; background: #e2e8f0; outline: none; }
+.sim-range::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; border-radius: 9999px; background: linear-gradient(135deg, #2e7cf6, #22d3aa); box-shadow: 0 4px 14px rgba(46,124,246,.5); cursor: pointer; }
+.sim-range::-moz-range-thumb { width: 20px; height: 20px; border: 0; border-radius: 9999px; background: linear-gradient(135deg, #2e7cf6, #22d3aa); cursor: pointer; }

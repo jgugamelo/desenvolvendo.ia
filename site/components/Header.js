@@ -17,6 +17,7 @@ export default function Header({ t, lang, setLang }) {
 
   const links = [
     { href: '#solucoes', label: t.nav.solutions },
+    { href: '#funcionario-digital', label: t.nav.worker },
     { href: '#exemplos', label: t.nav.examples },
     { href: '#como-funciona', label: t.nav.how },
     { href: '#faq', label: t.nav.faq },
