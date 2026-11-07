@@ -55,16 +55,17 @@ html {
 
 /* ---------- buttons ---------- */
 .btn-primary {
-  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3.5 font-semibold text-white transition-all duration-300;
-  box-shadow: 0 8px 30px -10px rgba(46, 124, 246, 0.7);
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 font-semibold text-white transition-all duration-300;
+  background: linear-gradient(135deg, #2e7cf6 0%, #5b9bff 55%, #22d3aa 130%);
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.12) inset, 0 10px 40px -8px rgba(46, 124, 246, 0.8);
 }
 .btn-primary:hover {
-  @apply bg-accent-soft;
+  filter: brightness(1.1);
   transform: translateY(-2px);
   box-shadow: 0 14px 40px -10px rgba(46, 124, 246, 0.8);
 }
 .btn-ghost {
-  @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-500/40 px-6 py-3.5 font-semibold text-slate-200 transition-all duration-300;
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-7 py-3.5 font-semibold text-slate-200 backdrop-blur transition-all duration-300;
 }
 .btn-ghost:hover {
   @apply border-ai text-ai;
@@ -240,6 +241,43 @@ html {
 .gborder > * {
   border-radius: calc(1rem - 1px);
 }
+
+/* ---------- hero light beam ---------- */
+.hero-beam {
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 70%;
+  height: 140%;
+  background: linear-gradient(115deg, transparent 38%, rgba(124, 146, 255, 0.22) 47%, rgba(255, 255, 255, 0.16) 50%, rgba(91, 155, 255, 0.18) 53%, transparent 62%);
+  filter: blur(18px);
+  transform-origin: top left;
+  animation: beamSway 9s ease-in-out infinite alternate;
+}
+.hero-beam-2 {
+  left: -2%;
+  width: 55%;
+  opacity: 0.55;
+  filter: blur(36px);
+  animation-duration: 13s;
+  animation-direction: alternate-reverse;
+}
+@keyframes beamSway {
+  from { transform: rotate(-3deg); opacity: 0.75; }
+  to { transform: rotate(3deg); opacity: 1; }
+}
+
+/* ---------- mockup chart draw ---------- */
+.draw-line {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  animation: drawLine 2.4s 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes drawLine { to { stroke-dashoffset: 0; } }
+
+/* ---------- tech logos ---------- */
+.tech-logo { transition: color 0.3s ease, transform 0.3s ease; }
+.tech-logo:hover { color: var(--brand); transform: translateY(-3px); }
 
 /* ---------- scrollbar ---------- */
 ::-webkit-scrollbar { width: 10px; }

@@ -18,6 +18,31 @@ export const translations = {
       ctaPrimary: 'Solicitar diagnóstico',
       ctaSecondary: 'Ver o que fazemos',
       chips: ['Sistemas personalizados', 'Funcionários digitais', 'Inteligência de dados'],
+      mockup: {
+        brand: 'Central de operação',
+        tabs: ['Visão geral', 'Agentes', 'Processos', 'Relatórios'],
+        welcome: 'Bom dia, equipe',
+        kpis: [
+          { value: '1.248', label: 'Tarefas concluídas hoje' },
+          { value: '87', label: 'Acordos fechados' },
+          { value: '312h', label: 'Horas economizadas no mês' },
+        ],
+        chartTitle: 'Tarefas executadas por funcionários digitais',
+        feedTitle: 'Atividade agora',
+        feed: [
+          'Acordo de R$ 950 formalizado',
+          'Sinistro #4821 com documentos conferidos',
+          'Novo caso triado e enviado ao advogado',
+          '214 pagamentos conciliados',
+          'Cliente atualizado sobre o andamento',
+          'Relatório diário enviado ao gestor',
+        ],
+        agents: 'agentes ativos',
+      },
+    },
+    stack: {
+      label: 'Especialistas em transformar operação em software',
+      title: 'Tecnologias com que trabalhamos',
     },
     problem: {
       label: 'O problema',
@@ -253,6 +278,31 @@ export const translations = {
       ctaPrimary: 'Request a diagnosis',
       ctaSecondary: 'See what we do',
       chips: ['Custom systems', 'Digital workers', 'Data intelligence'],
+      mockup: {
+        brand: 'Operations center',
+        tabs: ['Overview', 'Agents', 'Processes', 'Reports'],
+        welcome: 'Good morning, team',
+        kpis: [
+          { value: '1,248', label: 'Tasks completed today' },
+          { value: '87', label: 'Agreements closed' },
+          { value: '312h', label: 'Hours saved this month' },
+        ],
+        chartTitle: 'Tasks executed by digital workers',
+        feedTitle: 'Live activity',
+        feed: [
+          '$950 agreement formalized',
+          'Claim #4821 documents verified',
+          'New case triaged and sent to attorney',
+          '214 payments reconciled',
+          'Client updated on progress',
+          'Daily report sent to manager',
+        ],
+        agents: 'active agents',
+      },
+    },
+    stack: {
+      label: 'Experts in turning operations into software',
+      title: 'Technologies we work with',
     },
     problem: {
       label: 'The problem',

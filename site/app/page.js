@@ -7,6 +7,7 @@ import ParticleCanvas from '@/components/ParticleCanvas';
 import CursorGlow from '@/components/CursorGlow';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import TechStack from '@/components/TechStack';
 import { Problem, Pillars, InAction, Examples, How, Engagement, FinalCta } from '@/components/Sections';
 import Faq from '@/components/Faq';
 import LeadForm from '@/components/LeadForm';
@@ -38,6 +39,7 @@ export default function Page() {
 
       <Header t={t} lang={lang} setLang={setLang} />
       <Hero t={t} />
+      <TechStack t={t} />
       <Problem t={t} />
       <Pillars t={t} />
       <InAction t={t} />

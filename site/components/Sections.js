@@ -169,7 +169,7 @@ export function Examples({ t }) {
                   setActive(i);
                   trackEvent('select_example', { example: x.name });
                 }}
-                className={`rounded-xl border px-5 py-2.5 text-sm font-semibold transition-all duration-300 ${
+                className={`rounded-full border px-5 py-2.5 text-sm font-semibold transition-all duration-300 ${
                   i === active
                     ? 'border-ai/50 bg-gradient-to-r from-accent/20 to-ai/20 text-white shadow-lg shadow-accent/10'
                     : 'border-white/10 bg-ink-900/50 text-slate-400 hover:border-white/25 hover:text-slate-200'
