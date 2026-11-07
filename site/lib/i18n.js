@@ -68,12 +68,14 @@ export const translations = {
     pillars: {
       label: 'O que fazemos',
       title: 'Três frentes, uma operação mais leve',
+      subtitle: 'Construímos, integramos e mantemos. Sua equipe recebe o trabalho pronto.',
       items: [
         {
           img: '/media/pilar-sistemas.webp',
           tag: '01',
           name: 'Sistemas personalizados',
           text: 'Plataformas internas desenhadas para o jeito que a sua empresa trabalha.',
+          chip: 'Integrado ao seu sistema',
           points: ['Portais e painéis internos', 'Controle de carteiras e processos', 'Integração com o que você já usa'],
         },
         {
@@ -81,6 +83,7 @@ export const translations = {
           tag: '02',
           name: 'Funcionários digitais',
           text: 'Agentes de IA que executam tarefas completas, do início ao fim.',
+          chip: 'Tarefa concluída',
           points: ['Negociam, triam e atendem', 'Conferem documentos e dados', 'Leem o sentimento de cada conversa'],
         },
         {
@@ -88,6 +91,7 @@ export const translations = {
           tag: '03',
           name: 'Inteligência de dados',
           text: 'Números da operação organizados para decidir com segurança.',
+          chip: 'Alerta enviado ao gestor',
           points: ['Painéis em tempo real', 'Previsões e alertas', 'Visão por equipe e unidade'],
         },
       ],
@@ -117,6 +121,7 @@ export const translations = {
     examples: {
       label: 'Exemplos de aplicação',
       title: 'Onde o software substitui trabalho caro',
+      subtitle: 'Cenários onde o modelo gera retorno rápido.',
       taskTitle: 'A tarefa',
       howTitle: 'Como fazemos',
       tabs: [
@@ -126,6 +131,7 @@ export const translations = {
           task: 'Contatar devedores, negociar e formalizar acordos.',
           how: 'Funcionários digitais conduzem a negociação dentro das suas regras e registram cada acordo.',
           result: 'Mais acordos com a mesma equipe',
+          chip: 'Acordo formalizado',
         },
         {
           img: '/media/ex-juridico.webp',
@@ -133,6 +139,7 @@ export const translations = {
           task: 'Triar novos casos, organizar documentos e acompanhar prazos.',
           how: 'Agentes fazem a triagem, extraem dados de documentos e alimentam o sistema do escritório.',
           result: 'Advogados focados no que exige advogado',
+          chip: 'Caso triado e enviado',
         },
         {
           img: '/media/ex-seguros.webp',
@@ -140,6 +147,7 @@ export const translations = {
           task: 'Receber sinistros, conferir documentos e atualizar o cliente.',
           how: 'O agente recebe o aviso, confere a documentação e mantém o segurado informado em cada etapa.',
           result: 'Sinistros andando sem fila',
+          chip: 'Documentos conferidos',
         },
         {
           img: '/media/ex-backoffice.webp',
@@ -147,12 +155,14 @@ export const translations = {
           task: 'Conciliar pagamentos, lançar notas e montar relatórios.',
           how: 'Automações conciliam e lançam os dados, e painéis mostram o resultado em tempo real.',
           result: 'Fechamento sem planilha manual',
+          chip: 'Conciliação concluída',
         },
       ],
     },
     how: {
       label: 'Como trabalhamos',
       title: 'Do diagnóstico à evolução contínua',
+      subtitle: 'Um método simples, com entregas em semanas.',
       steps: [
         { title: 'Diagnóstico', text: 'Mapeamos a operação e onde está o custo.' },
         { title: 'Desenho', text: 'Definimos o que o software vai executar.' },
@@ -170,6 +180,7 @@ export const translations = {
     engagement: {
       label: 'Formatos de contratação',
       title: 'Um modelo para cada fase',
+      subtitle: 'Comece pequeno e evolua conforme o resultado aparece.',
       items: [
         { name: 'Diagnóstico', text: 'Mapa das oportunidades e do investimento.', tag: 'Comece aqui' },
         { name: 'Implantação', text: 'Construção e integração da solução.' },
@@ -328,12 +339,14 @@ export const translations = {
     pillars: {
       label: 'What we do',
       title: 'Three practices, one lighter operation',
+      subtitle: 'We build, integrate and maintain. Your team gets finished work.',
       items: [
         {
           img: '/media/pilar-sistemas.webp',
           tag: '01',
           name: 'Custom systems',
           text: 'Internal platforms designed around the way your company works.',
+          chip: 'Integrated with your system',
           points: ['Internal portals and panels', 'Portfolio and process control', 'Integration with your current tools'],
         },
         {
@@ -341,6 +354,7 @@ export const translations = {
           tag: '02',
           name: 'Digital workers',
           text: 'AI agents that carry out complete tasks, start to finish.',
+          chip: 'Task completed',
           points: ['Negotiate, triage and respond', 'Check documents and data', 'Read the sentiment of every conversation'],
         },
         {
@@ -348,6 +362,7 @@ export const translations = {
           tag: '03',
           name: 'Data intelligence',
           text: 'Operational numbers organized so you can decide with confidence.',
+          chip: 'Alert sent to manager',
           points: ['Real-time dashboards', 'Forecasts and alerts', 'Views by team and location'],
         },
       ],
@@ -377,6 +392,7 @@ export const translations = {
     examples: {
       label: 'Use cases',
       title: 'Where software replaces expensive work',
+      subtitle: 'Scenarios where the model pays back fast.',
       taskTitle: 'The task',
       howTitle: 'How we do it',
       tabs: [
@@ -386,6 +402,7 @@ export const translations = {
           task: 'Reach debtors, negotiate and formalize agreements.',
           how: 'Digital workers run the negotiation within your rules and log every agreement.',
           result: 'More agreements with the same team',
+          chip: 'Agreement formalized',
         },
         {
           img: '/media/ex-juridico.webp',
@@ -393,6 +410,7 @@ export const translations = {
           task: 'Triage new cases, organize documents and track deadlines.',
           how: 'Agents triage, extract data from documents and feed the firm’s system.',
           result: 'Attorneys focused on attorney work',
+          chip: 'Case triaged and routed',
         },
         {
           img: '/media/ex-seguros.webp',
@@ -400,6 +418,7 @@ export const translations = {
           task: 'Receive claims, check documents and update the client.',
           how: 'The agent takes the claim, checks the paperwork and keeps the insured informed at every step.',
           result: 'Claims moving without a queue',
+          chip: 'Documents verified',
         },
         {
           img: '/media/ex-backoffice.webp',
@@ -407,12 +426,14 @@ export const translations = {
           task: 'Reconcile payments, post invoices and build reports.',
           how: 'Automations reconcile and post the data, and dashboards show results in real time.',
           result: 'Month-end close without manual spreadsheets',
+          chip: 'Reconciliation complete',
         },
       ],
     },
     how: {
       label: 'How we work',
       title: 'From diagnosis to continuous evolution',
+      subtitle: 'A simple method, with deliveries in weeks.',
       steps: [
         { title: 'Diagnosis', text: 'We map the operation and where the cost is.' },
         { title: 'Design', text: 'We define what the software will execute.' },
@@ -429,6 +450,7 @@ export const translations = {
     engagement: {
       label: 'Engagement models',
       title: 'A model for every stage',
+      subtitle: 'Start small and grow as results show up.',
       items: [
         { name: 'Diagnosis', text: 'A map of opportunities and investment.', tag: 'Start here' },
         { name: 'Implementation', text: 'Building and integrating the solution.' },

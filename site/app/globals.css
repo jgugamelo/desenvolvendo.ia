@@ -279,6 +279,46 @@ html {
 .tech-logo { transition: color 0.3s ease, transform 0.3s ease; }
 .tech-logo:hover { color: var(--brand); transform: translateY(-3px); }
 
+/* ---------- reference-style surfaces ---------- */
+.surface {
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.015) 100%), rgba(7, 14, 32, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(16px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 30px 80px -40px rgba(0, 0, 0, 0.8);
+}
+.surface-hover { transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease; }
+.surface-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(91, 155, 255, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 30px 80px -30px rgba(46, 124, 246, 0.45);
+}
+.glow-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: -1;
+}
+.section-beam {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 60%;
+  height: 100%;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse 45% 30% at 50% 28%, rgba(91, 155, 255, 0.13), transparent 75%);
+  pointer-events: none;
+  z-index: -1;
+}
+.pill {
+  @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-slate-300;
+}
+.float-chip {
+  @apply absolute flex items-center gap-2 rounded-2xl border border-white/10 bg-ink-950/80 px-3.5 py-2.5 text-xs font-semibold text-white shadow-xl backdrop-blur-xl;
+  animation: float 6s ease-in-out infinite;
+}
+
 /* ---------- scrollbar ---------- */
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: #050b18; }
@@ -287,3 +327,6 @@ html {
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover { background: #2e7cf6; }
+
+/* dark dropdown options */
+select option { background: #081228; color: #e2e8f0; }
