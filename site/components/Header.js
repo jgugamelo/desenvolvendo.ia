@@ -11,7 +11,7 @@ export default function Header({ t, lang, setLang }) {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
@@ -32,7 +32,7 @@ export default function Header({ t, lang, setLang }) {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'border-b border-white/5 bg-ink-950/85 backdrop-blur-xl' : 'bg-transparent'
+        scrolled ? 'border-b border-white/5 bg-ink-950/95' : 'bg-transparent'
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
@@ -88,7 +88,7 @@ export default function Header({ t, lang, setLang }) {
       </div>
 
       {open && (
-        <nav className="border-t border-white/5 bg-ink-950/95 px-5 py-4 backdrop-blur-xl lg:hidden">
+        <nav className="border-t border-white/5 bg-ink-950 px-5 py-4 lg:hidden">
           {links.map((l) => (
             <a
               key={l.href}

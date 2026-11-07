@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Reveal from './Reveal';
 import Icon from './Icon';
 import ProductsDemo from './ProductsDemo';
-import LightParticles from './LightParticles';
 import { AgentsViz, SystemsViz, DataViz } from './PillarVisuals';
 import { trackEvent, whatsappLink } from '@/lib/i18n';
 
@@ -25,9 +24,8 @@ export function Heading({ label, title, subtitle, className = '', light = false 
 export function Problem({ t }) {
   const p = t.problem;
   return (
-    <section className="section-light relative z-10 py-24 lg:py-32">
-      <LightParticles />
-      <div className="relative mx-auto max-w-6xl px-5 lg:px-8">
+    <section className="section-light relative py-24 lg:py-32">
+      <div className="relative z-[2] mx-auto max-w-6xl px-5 lg:px-8">
         <Heading label={p.label} title={p.title} subtitle={p.intro} light />
 
         <Reveal className="mt-14">
@@ -163,9 +161,8 @@ export function Examples({ t }) {
   const tab = e.tabs[active];
 
   return (
-    <section id="exemplos" className="section-light relative z-10 py-24 lg:py-32">
-      <LightParticles />
-      <div className="relative mx-auto max-w-6xl px-5 lg:px-8">
+    <section id="exemplos" className="section-light relative py-24 lg:py-32">
+      <div className="relative z-[2] mx-auto max-w-6xl px-5 lg:px-8">
         <Heading label={e.label} title={e.title} subtitle={e.subtitle} light />
 
         <Reveal className="mt-12 flex justify-center">
@@ -199,7 +196,7 @@ export function Examples({ t }) {
               height="452"
               className="aspect-[4/3] h-full w-full object-cover"
             />
-            <span className="absolute right-5 top-5 flex items-center gap-2 rounded-2xl border border-slate-200 bg-white/95 px-3.5 py-2.5 text-xs font-semibold text-slate-900 shadow-xl backdrop-blur">
+            <span className="absolute right-5 top-5 flex items-center gap-2 rounded-2xl border border-slate-200 bg-white/95 px-3.5 py-2.5 text-xs font-semibold text-slate-900 shadow-xl">
               <span className="h-2 w-2 animate-pulse rounded-full bg-ai" /> {tab.chip}
             </span>
           </div>
@@ -282,9 +279,8 @@ export function How({ t }) {
 export function Engagement({ t }) {
   const g = t.engagement;
   return (
-    <section className="section-white relative z-10 py-24 lg:py-32">
-      <LightParticles />
-      <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
+    <section className="section-white relative py-24 lg:py-32">
+      <div className="relative z-[2] mx-auto max-w-7xl px-5 lg:px-8">
         <Heading label={g.label} title={g.title} subtitle={g.subtitle} light />
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {g.items.map((p, i) => (

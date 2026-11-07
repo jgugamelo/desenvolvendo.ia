@@ -23,7 +23,7 @@ export default function ParticleCanvas({ variant = 'dark' }) {
     let particles = [];
     const mouse = { x: null, y: null };
 
-    const DPR = Math.min(window.devicePixelRatio || 1, 2);
+    const DPR = Math.min(window.devicePixelRatio || 1, 1.5);
 
     function resize() {
       canvas.width = window.innerWidth * DPR;
@@ -36,7 +36,7 @@ export default function ParticleCanvas({ variant = 'dark' }) {
 
     function initParticles() {
       const area = window.innerWidth * window.innerHeight;
-      const count = Math.min(Math.floor(area / 11500), 150);
+      const count = Math.min(Math.floor(area / 13000), 110);
       particles = Array.from({ length: count }, () => ({
         x: Math.random() * window.innerWidth,
         y: Math.random() * window.innerHeight,
@@ -50,6 +50,7 @@ export default function ParticleCanvas({ variant = 'dark' }) {
       ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
       const LINK = 150;
+      const LINK2 = LINK * LINK;
       const MOUSE_R = 230;
 
       for (const p of particles) {
@@ -87,9 +88,12 @@ export default function ParticleCanvas({ variant = 'dark' }) {
           const a = particles[i];
           const b = particles[j];
           const dx = a.x - b.x;
+          if (dx > LINK || dx < -LINK) continue;
           const dy = a.y - b.y;
-          const dist = Math.hypot(dx, dy);
-          if (dist < LINK) {
+          if (dy > LINK || dy < -LINK) continue;
+          const d2 = dx * dx + dy * dy;
+          if (d2 < LINK2) {
+            const dist = Math.sqrt(d2);
             let alpha = (1 - dist / LINK) * 0.45;
             // brighten links near the mouse
             if (mouse.x !== null) {
@@ -148,7 +152,7 @@ export default function ParticleCanvas({ variant = 'dark' }) {
   return (
     <canvas
       ref={canvasRef}
-      className={`pointer-events-none fixed inset-0 z-0 ${variant === 'light' ? '' : 'opacity-90'}`}
+      className="pointer-events-none fixed inset-0 z-[1] opacity-90"
       aria-hidden="true"
     />
   );

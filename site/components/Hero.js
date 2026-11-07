@@ -50,7 +50,7 @@ function OpsMockup({ m }) {
       className="mockup-frame mx-auto w-full max-w-5xl transition-transform duration-300 ease-out"
       style={{ transform: 'perspective(1400px) rotateX(8deg)' }}
     >
-      <div className="rounded-[28px] border border-white/10 bg-ink-900/70 p-3 shadow-2xl shadow-accent/20 backdrop-blur-xl sm:p-4">
+      <div className="rounded-[28px] border border-white/10 bg-ink-900/70 p-3 shadow-2xl shadow-accent/20 sm:p-4">
         <div className="rounded-[20px] border border-white/5 bg-ink-950/80 p-4 sm:p-6">
           {/* top bar */}
           <div className="flex flex-wrap items-center gap-3">

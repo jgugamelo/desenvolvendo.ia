@@ -177,7 +177,7 @@ export function AgentsViz({ v, chip }) {
         {/* toast */}
         {phase === 4 && (
           <div key={`t-${doneCount}`} className="viz-toast absolute bottom-6 left-1/2 -translate-x-1/2">
-            <span className="flex items-center gap-2 rounded-2xl border border-white/10 bg-ink-950/90 px-4 py-2.5 text-[13px] font-semibold text-white shadow-xl backdrop-blur">
+            <span className="flex items-center gap-2 rounded-2xl border border-white/10 bg-ink-950/90 px-4 py-2.5 text-[13px] font-semibold text-white shadow-xl">
               <CheckCircle2 className="h-4 w-4 text-ai" /> {chip}
             </span>
           </div>
