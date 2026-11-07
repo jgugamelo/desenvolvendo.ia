@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import Reveal from './Reveal';
 import Icon from './Icon';
+import LightParticles from './LightParticles';
 import { trackEvent } from '@/lib/i18n';
 
 function Field({ label, display, children }) {
@@ -71,7 +72,8 @@ export default function WorkerSection({ t }) {
   const w = t.worker;
   return (
     <section id="funcionario-digital" className="section-white relative z-10 py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <LightParticles />
+      <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         {/* intro: text + office photo */}
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <Reveal>

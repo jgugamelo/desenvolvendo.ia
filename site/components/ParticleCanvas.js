@@ -7,8 +7,14 @@ import { useEffect, useRef } from 'react';
  * Particles drift slowly and connect with lines; they react to the mouse,
  * being gently attracted toward the cursor, with brighter connections nearby.
  */
-export default function ParticleCanvas() {
+const PALETTES = {
+  dark: { line: '91, 155, 255', dot: '34, 211, 170', lineK: 1, dotBase: 0.65 },
+  light: { line: '37, 99, 235', dot: '13, 148, 136', lineK: 0.7, dotBase: 0.55 },
+};
+
+export default function ParticleCanvas({ variant = 'dark' }) {
   const canvasRef = useRef(null);
+  const pal = PALETTES[variant] || PALETTES.dark;
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -90,7 +96,7 @@ export default function ParticleCanvas() {
               const mid = Math.hypot((a.x + b.x) / 2 - mouse.x, (a.y + b.y) / 2 - mouse.y);
               if (mid < MOUSE_R) alpha += (1 - mid / MOUSE_R) * 0.5;
             }
-            ctx.strokeStyle = `rgba(91, 155, 255, ${alpha.toFixed(3)})`;
+            ctx.strokeStyle = `rgba(${pal.line}, ${(alpha * pal.lineK).toFixed(3)})`;
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
@@ -102,12 +108,12 @@ export default function ParticleCanvas() {
 
       // dots
       for (const p of particles) {
-        let glow = 0.65;
+        let glow = pal.dotBase;
         if (mouse.x !== null) {
           const dist = Math.hypot(p.x - mouse.x, p.y - mouse.y);
           if (dist < MOUSE_R) glow += (1 - dist / MOUSE_R) * 0.35;
         }
-        ctx.fillStyle = `rgba(34, 211, 170, ${glow.toFixed(3)})`;
+        ctx.fillStyle = `rgba(${pal.dot}, ${glow.toFixed(3)})`;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fill();
@@ -137,12 +143,12 @@ export default function ParticleCanvas() {
       window.removeEventListener('mousemove', onMove);
       window.removeEventListener('mouseout', onLeave);
     };
-  }, []);
+  }, [pal]);
 
   return (
     <canvas
       ref={canvasRef}
-      className="pointer-events-none fixed inset-0 z-0 opacity-90"
+      className={`pointer-events-none fixed inset-0 z-0 ${variant === 'light' ? '' : 'opacity-90'}`}
       aria-hidden="true"
     />
   );

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Reveal from './Reveal';
 import Icon from './Icon';
 import ProductsDemo from './ProductsDemo';
+import LightParticles from './LightParticles';
 import { trackEvent, whatsappLink } from '@/lib/i18n';
 
 /* Centered heading used across sections (reference style) */
@@ -24,7 +25,8 @@ export function Problem({ t }) {
   const p = t.problem;
   return (
     <section className="section-light relative z-10 py-24 lg:py-32">
-      <div className="mx-auto max-w-6xl px-5 lg:px-8">
+      <LightParticles />
+      <div className="relative mx-auto max-w-6xl px-5 lg:px-8">
         <Heading label={p.label} title={p.title} subtitle={p.intro} light />
 
         <Reveal className="mt-14">
@@ -172,7 +174,8 @@ export function Examples({ t }) {
 
   return (
     <section id="exemplos" className="section-light relative z-10 py-24 lg:py-32">
-      <div className="mx-auto max-w-6xl px-5 lg:px-8">
+      <LightParticles />
+      <div className="relative mx-auto max-w-6xl px-5 lg:px-8">
         <Heading label={e.label} title={e.title} subtitle={e.subtitle} light />
 
         <Reveal className="mt-12 flex justify-center">
@@ -290,7 +293,8 @@ export function Engagement({ t }) {
   const g = t.engagement;
   return (
     <section className="section-white relative z-10 py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+      <LightParticles />
+      <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         <Heading label={g.label} title={g.title} subtitle={g.subtitle} light />
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {g.items.map((p, i) => (
